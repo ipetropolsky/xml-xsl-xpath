@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doc>
+<?xml-stylesheet type="text/xsl" href="/xml-xsl-xpath/run/transform.xsl"?>
+<doc title="Пример HTML">
+    <url href="https://hh.ru">hh.ru</url>
+    <url href="https://hh.ua">hh.ua</url>
+    <url href="https://hh.kz" external="true">hh.kz</url>
 </doc>
