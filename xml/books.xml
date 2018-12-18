@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<library>
+    <books>
+        <book id="123" year="2017" pages="464" weight="606" price="529" inStock="false">
+            <title>Чистый код</title>
+            <author>
+                <first>Роберт</first>
+                <last>Мартин</last>
+            </author>
+            <publisher>Питер</publisher>
+            <category>программирование</category>
+        </book>
+        <book id="124" year="2017" pages="416" weight="425" price="389">
+            <title>Уникальный экземпляр. Истории о том о сём</title>
+            <author>
+                <first>Том</first>
+                <last>Хэнкс</last>
+            </author>
+            <publisher>Азбука</publisher>
+            <category>творчество</category>
+            <category>фантастика</category>
+        </book>
+        <book id="125" year="2016" pages="208" weight="610" price="1099">
+            <title>О шрифте</title>
+            <author>
+                <first>Эрик</first>
+                <last>Шпикерманн</last>
+            </author>
+            <publisher>Манн, Иванов и Фербер</publisher>
+            <category>шрифты</category>
+            <category>типографика</category>
+        </book>
+        <book id="126" year="2017" pages="224" weight="575" price="959">
+            <title>Программирование для детей</title>
+            <author>
+                <first>Кэрол</first>
+                <last>Вордерман</last>
+            </author>
+            <author>
+                <first>Джон</first>
+                <last>Вудкок</last>
+            </author>
+            <author>
+                <first>Шон</first>
+                <last>Макманус</last>
+            </author>
+            <publisher>Манн, Иванов и Фербер</publisher>
+            <category>программирование</category>
+            <category>дети</category>
+        </book>
+        <book id="127" year="2015" pages="320" weight="210">
+            <title>JavaScript. Карманный справочник</title>
+            <author>
+                <first>Дэвид</first>
+                <last>Флэнаган</last>
+            </author>
+            <publisher>Вильямс</publisher>
+            <category>программирование</category>
+            <category>javascript</category>
+        </book>
+        <book id="128" year="2016" pages="352" weight="80" price="679">
+            <title>Deadline. Роман об управлении проектами</title>
+            <author>
+                <first>Том</first>
+                <last>ДеМарко</last>
+            </author>
+            <publisher>Манн, Иванов и Фербер</publisher>
+            <category>управление проектами</category>
+        </book>
+    </books>
+    <reviews>
+        <entry likes="5" dislikes="1">
+            <author>Стивен Фрай</author>
+            <bookName>Уникальный экземпляр. Истории о том о сём</bookName>
+            <bookAuthor>Том Хэнкс</bookAuthor>
+            <review>Мистер Хэнкс оказался настоящим писателем с большой буквы “Х”</review>
+        </entry>
+        <entry likes="4" dislikes="8">
+            <author>Бодрый Бобр</author>
+            <bookName>Чистый код</bookName>
+            <bookAuthor>Роберт Мартин</bookAuthor>
+            <review>Нормально, но слишком уж разжёвывается всё. Перфекционистам будет в самый раз.</review>
+        </entry>
+    </reviews>
+</library>
