@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<user id="23531939">
+    <firstName>David</firstName>
+    <lastName>Walsh</lastName>
+    <accounts>
+        <account name="facebook">
+            <userName>davidwalshblog</userName>
+            <url>https://facebook.com/davidwalshblog</url>
+        </account>
+        <account name="twitter">
+            <userName>davidwalshblog</userName>
+            <url>https://twitter.com/davidwalshblog</url>
+        </account>
+        <account name="github">
+            <userName>darkwing</userName>
+            <url>https://github.com/darkwing</url>
+        </account>
+        <account name="linkedIn" connected="true">
+            <userName>davidjameswalsh</userName>
+            <url>https://linkedin.com/in/davidjameswalsh</url>
+        </account>
+    </accounts>
+</user>

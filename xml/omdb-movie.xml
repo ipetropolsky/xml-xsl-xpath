@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root response="True">
+    <movie
+        title="Coffee and Cigarettes"
+        year="2003"
+        rated="R"
+        released="11 Jun 2004"
+        runtime="95 min"
+        genre="Comedy, Drama, Music"
+        director="Jim Jarmusch"
+        writer="Jim Jarmusch"
+        actors="Roberto Benigni, Steven Wright, Joie Lee, Cinqué Lee"
+        plot="A series of vignettes that all have coffee and cigarettes in common."
+        language="English, French"
+        country="USA, Japan, Italy"
+        awards="2 wins &amp; 9 nominations."
+        poster="https://images-na.ssl-images-amazon.com/images/M/MV5BYzQxNzMzZTEtNjc1YS00NzExLWI0ZGItMWMxZTQzNDI1MjQ3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        metascore="65"
+        imdbRating="7.1"
+        imdbVotes="51,303"
+        imdbID="tt0379217"
+        type="movie"/>
+</root>
