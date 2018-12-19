@@ -1,3 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <doc>
+    <hello name="World">
+        <!-- Полезный комментарий -->
+        <doBang/>
+    </hello>
+    <hi:hello xmlns:hi="http://hh.ru/hi">
+        Привет!
+    </hi:hello>
 </doc>
