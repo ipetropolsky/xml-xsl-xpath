@@ -1,3 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<doc>
-</doc>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE library [
+    <!ELEMENT library (books, reviews)>
+    <!ELEMENT books (book*)>
+    <!ELEMENT book (title)>
+    <!ATTLIST book id ID #REQUIRED>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT reviews (entry*)>
+    <!ELEMENT entry ANY>
+    <!ATTLIST entry relates IDREFS #REQUIRED>
+]>
+<library>
+    <books>
+        <book id="123">
+            <title>Чистый код</title>
+        </book>
+        <book id="124">
+            <title>Уникальный экземпляр. Истории о том о сём</title>
+        </book>
+        <book id="125">
+            <title>О шрифте</title>
+        </book>
+        <book id="126">
+            <title>Программирование для детей</title>
+        </book>
+        <book id="127">
+            <title>JavaScript. Карманный справочник</title>
+        </book>
+        <book id="128">
+            <title>Deadline. Роман об управлении проектами</title>
+        </book>
+    </books>
+    <reviews>
+        <entry relates="124" likes="5" dislikes="1">
+            <author>Стивен Фрай</author>
+            <bookName>Уникальный экземпляр. Истории о том о сём</bookName>
+            <bookAuthor>Том Хэнкс</bookAuthor>
+            <review>Мистер Хэнкс оказался настоящим писателем с большой буквы “Х”</review>
+        </entry>
+        <entry relates="123 126" likes="4" dislikes="8">
+            <author>Бодрый Бобр</author>
+            <bookName>Чистый код</bookName>
+            <bookAuthor>Роберт Мартин</bookAuthor>
+            <review>Нормально, но слишком уж разжёвывается всё. Перфекционистам будет в самый раз.</review>
+        </entry>
+    </reviews>
+</library>
