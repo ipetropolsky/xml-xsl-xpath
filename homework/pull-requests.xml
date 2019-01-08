@@ -21,6 +21,16 @@
                 <name>CLA Signed</name>
             </label>
         </labels>
+        <checks>
+            <check>
+                <description>continuous-integration/travis-ci/pr</description>
+                <status>succsess</status>
+            </check>
+            <check>
+                <description>deploy/netlify </description>
+                <status>succsess</status>
+            </check>
+        </checks>
         <commitRef type="head" sha="c905e10a3eff954dadee0ac6c5731ac5e65bca4d">
             <branch> 
                 <name>typescript-node-path</name>
@@ -127,6 +137,16 @@ rhaps there still is?\r\n\r\n<hr>\r\n\r\n**when running `npm start`** BEFORE:\r\
                 <name>CLA Signed</name>
             </label>
         </labels>
+        <checks>
+            <check>
+                <description>continuous-integration/travis-ci/pr</description>
+                <status>failed</status>
+            </check>
+            <check>
+                <description>deploy/netlify </description>
+                <status>succsess</status>
+            </check>
+        </checks>
         <commitRef type="head" sha="caad1bbffca683eea9d79e99335df07d76fb7684">
             <branch> 
                 <name>master</name>
@@ -233,6 +253,16 @@ ou for sending the PR!\r\n\r\nIf you changed any code, please provide us with cl
                 <name>CLA Signed</name>
             </label>
         </labels>
+        <checks>
+            <check>
+                <description>continuous-integration/travis-ci/pr</description>
+                <status>succsess</status>
+            </check>
+            <check>
+                <description>deploy/netlify </description>
+                <status>succsess</status>
+            </check>
+        </checks>
         <commitRef type="head" sha="609c985fc96e86a3abe2d4391915437004d9ca73">
             <branch> 
                 <name>patch-1</name>
