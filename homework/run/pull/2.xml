@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="./transform.xsl" ?>
+<doc title="Pull Request #1">
+    <pullRequest id="2"
+                 datetime="2018-01-01T03:29:54.453105Z"
+                 checks="reject"
+                 status="merged">
+        <title>test PR2</title>
+        <author>
+            <userName>Wallie</userName>
+            <avatar>ava</avatar>
+        </author>
+        <labels>
+            <label>
+                <title>lbl1</title>
+                <type>danger</type>
+            </label>
+        </labels>
+        <comments>
+            <comment datetime="2018-01-02T04:50:21.342323Z">
+                <author>
+                    <userName>Andrey</userName>
+                    <avatar>ava2</avatar>
+                </author>
+                <text>WTF</text>
+            </comment>
+            <comment datetime="2018-01-03T04:20:02.424123Z">
+                <author>
+                    <userName>Denis</userName>
+                    <avatar>ava3</avatar>
+                </author>
+                <text>Bad PR</text>
+            </comment>
+            <comment datetime="2018-01-03T04:21:03.4761431">
+                <author>
+                    <userName>Wallie</userName>
+                    <avatar>ava</avatar>
+                </author>
+                <text>:(</text>
+            </comment>
+        </comments>
+        <text>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eligendi facere nobis sapiente ullam.
+            Ad aut commodi cumque eos facere, molestiae molestias nam odio quibusdam quod repudiandae temporibus ut vitae.
+        </text>
+        <repository>
+            <author>
+                <userName>facebook</userName>
+                <avatar>ava</avatar>
+            </author>
+            <name>create-react-app</name>
+        </repository>
+    </pullRequest>
+</doc>
