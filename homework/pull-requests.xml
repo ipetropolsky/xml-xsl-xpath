@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pullrequests>
+    <pullrequest>
+        <title>
+            npm run build Fix
+        </title>
+        <date>
+            2019-05-30T09:00:00
+        </date>
+        <author>
+            <fullname>
+                Nilson Bertola
+            </fullname>
+            <login>
+                NilsonBF
+            </login>
+        </author>
+        <tags>
+            <tag>
+                CLA Signed
+            </tag>
+        </tags>
+        <checks>
+            <total>2</total>
+            <passed>2</passed>
+        </checks>
+        <comments>
+            <count>2</count>
+        </comments>
+    </pullrequest>
+</pullrequests>

@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Convert all bit.ly links from http
+                    to https
+                
+
+
+
+
+
+
+                
+
+          #6239
+            opened Jan 20, 2019 by
+            leighhalliday
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        1
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Adds Babel plugin
+                    babel-plugin-optimize-react
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6219
+            opened Jan 17, 2019 by
+            trueadm
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        19
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                npm run build Fix
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6215
+            opened Jan 17, 2019 by
+            NilsonBF
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        2
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Add deployment instructions with AWS
+                    Amplify
+                
+
+
+
+
+
+
+                
+
+          #6208
+            opened Jan 15, 2019 by
+            swaminator
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        1
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                [react-scripts] Fix module
+                    resolution for yarn linked components
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6207
+            opened Jan 15, 2019 by
+            yhnavein
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        3
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Suggests that tsconfig.json is
+                    incorrect only when SyntaxError is caught
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6160
+            opened Jan 9, 2019 by
+            Andarist
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        2
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Added WRITE_TO_DISK environment
+                    variable. Fixes #1070
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6144
+            opened Jan 7, 2019 by
+            ioloie
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        9
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Document --stats flag and multi
+                    chunk analysis
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6127
+            opened Jan 4, 2019 by
+            OzairP
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        5
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Remove unused babel-loader from
+                    babel-preset-react-app
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6124
+            opened Jan 4, 2019 by
+            vlad-zhukov
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Set module resolution based on
+                    baseUrl in jsconfig/tsconfig.json
+                
+
+
+
+
+
+
+                
+CLA Signed
+tag: breaking change
+tag: new feature
+
+                
+
+          #6116
+            opened Jan 3, 2019 by
+            rovansteen
+
+                    
+    •
+      
+        Changes requested
+      
+
+                    1 of 4
+                    
+
+
+
+                  3.0
+                
+
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        66
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                removes use of clearConsole() in
+                    some instances
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6102
+            opened Dec 29, 2018 by
+            drewswaycool
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        4
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Add explanation for adding
+                    everything as dependencies to docs
+                
+
+
+
+
+
+
+                
+CLA Signed
+tag: documentation
+
+                
+
+          #6082
+            opened Dec 22, 2018 by
+            mikeattara
+
+                    
+
+
+
+                  2.1.4
+                
+
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        2
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Validation for multiple arguments if
+                    specified for create-react-app
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6080
+            opened Dec 21, 2018 by
+            jamesgeorge007
+
+                    
+    •
+      
+        Changes requested
+      
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                            
+                                
+                            
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        12
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Fix jest testMatch
+                
+
+
+
+
+
+
+                
+CLA Signed
+stale
+
+                
+
+          #6075
+            opened Dec 20, 2018 by
+            Madumo
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        3
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                add note about serviceWorker.js
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6069
+            opened Dec 20, 2018 by
+            deltaskelta
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        3
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                [docs] Warn/clarify that env vars
+                    are NOT "SECRET"
+                
+
+
+
+
+
+
+                
+CLA Signed
+tag: documentation
+
+                
+
+          #6062
+            opened Dec 18, 2018 by
+            JBallin
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        10
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                environment variable to disable
+                    inlining images
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6060
+            opened Dec 18, 2018 by
+            peterbe
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        2
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Ignore Eslint errors in
+                    src/**/node_modules (allows package development inside /src without breaking ESLint and
+                    babel-loader)
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6056
+            opened Dec 17, 2018 by
+            alex-pex
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        1
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Support for graceful extension of
+                    Jest config
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6055
+            opened Dec 17, 2018 by
+            jamesmfriedman
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        4
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Fix e2e:docker failure with "access
+                    denied"
+                
+
+
+
+
+
+
+                
+CLA Signed
+stale
+
+                
+
+          #6050
+            opened Dec 16, 2018 by
+            jamesknelson
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        1
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                PORT=0 in .env: random port, default
+                    interface localhost for security
+                
+
+
+
+
+
+
+                
+CLA Signed
+stale
+
+                
+
+          #6034
+            opened Dec 14, 2018 by
+            haraldrudell
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        4
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Relax aria-role linting for
+                    developer-created components
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #6030
+            opened Dec 12, 2018 by
+            visnup
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        4
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Disable AMD
+                
+
+
+
+
+
+
+                
+CLA Signed
+tag: breaking change
+tag: bug fix
+
+                
+
+          #6018
+            opened Dec 11, 2018 by
+            martnu
+
+                    
+
+
+
+                  3.0
+                
+
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        3
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Support React Hooks (#5602)
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #5997
+            opened Dec 9, 2018 by
+            eivind88
+
+                    
+
+
+
+                  3.0
+                
+
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        4
+                    
+                
+            
+        
+    
+    
+        
+            
+            
+            
+
+
+
+            
+            
+            
+                Apply useESModules option to
+                    @babel/preset-env
+                
+
+
+
+
+
+
+                
+CLA Signed
+
+                
+
+          #5973
+            opened Dec 6, 2018 by
+            strayiker
+
+                    
+
+                
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                    
+                        
+                            
+                        
+                        11
+                    
+                
+            
+        
+    
+
+
+
+
