@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="transform.xml"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
 <pullRequests>
     <pullRequest id="6219">
         <title>Adds Babel plugin babel-plugin-optimize-react</title>

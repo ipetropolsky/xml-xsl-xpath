@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="transformSingle.xml"?>
+<?xml-stylesheet type="text/xsl" href="transformSingle.xsl"?>
 <pullRequest id="6281">
     <title>Adds Babel plugin babel-plugin-optimize-react</title>
     <url>https://github.com/facebook/create-react-app/pull/6219</url>
