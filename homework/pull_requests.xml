@@ -14,7 +14,7 @@
         </labels>
         <comments>10</comments>
     </pullRequest>
-    <pullRequest id="6219">
+    <pullRequest id="6220">
         <title>Added WRITE_TO_DISK environment variable. Fixes #1070</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
         <openerName>someProg</openerName>
@@ -27,7 +27,7 @@
         </labels>
         <comments>5</comments>
     </pullRequest>
-    <pullRequest id="6219">
+    <pullRequest id="6230">
         <title>removes use of clearConsole() in some instances</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
         <openerName>trueadm</openerName>
@@ -41,7 +41,7 @@
         </labels>
         <comments>0</comments>
     </pullRequest>
-    <pullRequest id="6219">
+    <pullRequest id="6281">
         <title>Adds Babel plugin babel-plugin-optimize-react</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
         <openerName>visnup</openerName>
@@ -55,7 +55,7 @@
         </labels>
         <comments>150</comments>
     </pullRequest>
-    <pullRequest id="6219">
+    <pullRequest id="6245">
         <title>Relax aria-role  linting for developer-created components</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
         <openerName>babay</openerName>

@@ -2,8 +2,10 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <xsl:output method="html"/>
+
 <xsl:variable name="closedPR" select="count(//closedAt[ . != '']) + count(//mergedAt[ . != ''])">
 </xsl:variable>
+
 <xsl:template match="/">
 <html>
     <head>
@@ -69,7 +71,10 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </xsl:template>
 
 <xsl:template match="title">
-    <a href="#" class="has-text-black has-text-weight-bold">
+    <a class="has-text-black has-text-weight-bold">
+        <xsl:attribute name="href">
+            <xsl:value-of select="concat('pull',../@id, '.xml')"/>
+        </xsl:attribute>
         <xsl:value-of select="."/>
     </a>
 </xsl:template>
@@ -98,4 +103,5 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
     </span>
     <xsl:text> </xsl:text>
 </xsl:template>
+
 </xsl:stylesheet>
