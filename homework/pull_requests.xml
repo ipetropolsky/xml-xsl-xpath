@@ -3,143 +3,68 @@
 <pullRequests>
     <pullRequest id="6219">
         <title>Adds Babel plugin babel-plugin-optimize-react</title>
-        <htmlUrl>https://github.com/facebook/create-react-app/pull/6219</htmlUrl>
-        <user>
-            <name>trueadm</name>
-            <url>https://api.github.com/users/trueadm"</url>
-        </user>
-        <currentState>open</currentState>
-        <states>
-           <state>
-               <name>open</name>
-               <time>2019-01-20T12:00:00Z</time>
-           </state>
-            <state>
-                <name>merged</name>
-                <time></time>
-            </state>
-            <state>
-                <name>closed</name>
-                <time></time>
-            </state>
-        </states>
-        <assignees>
-            <assignee>
-                <name>trueAssignee</name>
-                <url>https://api.github.com/users/trueAssignee</url>
-            </assignee>
-        </assignees>
-
-        <requstedReviewers>
-            <reviewer>
-                <name></name>
-                <url></url>
-            </reviewer>
-        </requstedReviewers>
+        <url>https://github.com/facebook/create-react-app/pull/6219</url>
+        <openerName>trueadm</openerName>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <mergedAt></mergedAt>
+        <closedAt>2019-01-20T12:00:00Z</closedAt>
+        <checkPass>false</checkPass>
         <labels>
-            <label>
-                <name>CLA Signed</name>
-                <color>009900</color>
-            </label>
-            <label>
-                <name>tag:documentation</name>
-                <color>006b75</color>
-            </label>
-        </labels>
-        <comments>10</comments>
-    </pullRequest>
-        <pullRequest id="6219">
-        <title>Adds Babel plugin babel-plugin-optimize-react</title>
-        <htmlUrl>https://github.com/facebook/create-react-app/pull/6219</htmlUrl>
-        <user>
-            <name>trueadm</name>
-            <url>https://api.github.com/users/trueadm"</url>
-        </user>
-        <currentState>closed</currentState>
-        <states>
-           <state>
-               <name>open</name>
-               <time></time>
-           </state>
-            <state>
-                <name>merged</name>
-                <time></time>
-            </state>
-            <state>
-                <name>closed</name>
-                <time>2019-01-20T12:00:00Z</time>
-            </state>
-        </states>
-        <assignees>
-            <assignee>
-                <name>trueAssignee</name>
-                <url>https://api.github.com/users/trueAssignee</url>
-            </assignee>
-        </assignees>
-
-        <requstedReviewers>
-            <reviewer>
-                <name></name>
-                <url></url>
-            </reviewer>
-        </requstedReviewers>
-        <labels>
-            <label>
-                <name>CLA Signed</name>
-                <color>009900</color>
-            </label>
-            <label>
-                <name>tag:documentation</name>
-                <color>006b75</color>
-            </label>
+            <label>CLA Signed</label>
         </labels>
         <comments>10</comments>
     </pullRequest>
     <pullRequest id="6219">
-<title>Adds Babel plugin babel-plugin-optimize-react</title>
-<htmlUrl>https://github.com/facebook/create-react-app/pull/6219</htmlUrl>
-<user>
-    <name>trueadm</name>
-    <url>https://api.github.com/users/trueadm"</url>
-</user>
-<currentState>merged</currentState>
-<states>
-    <state>
-        <name>open</name>
-        <time>2019-01-20T12:00:00Z</time>
-    </state>
-    <state>
-        <name>merged</name>
-        <time>2019-01-20T12:00:00Z</time>
-    </state>
-    <state>
-        <name>closed</name>
-        <time></time>
-    </state>
-</states>
-<assignees>
-    <assignee>
-        <name>trueAssignee</name>
-        <url>https://api.github.com/users/trueAssignee</url>
-    </assignee>
-</assignees>
-
-<requstedReviewers>
-    <reviewer>
-        <name></name>
-        <url></url>
-    </reviewer>
-</requstedReviewers>
-<labels>
-    <label>
-        <name>CLA Signed</name>
-        <color>009900</color>
-    </label>
-    <label>
-        <name>tag:documentation</name>
-        <color>006b75</color>
-    </label>
-</labels>
-<comments>10</comments>
-</pullRequest>
+        <title>Added WRITE_TO_DISK environment variable. Fixes #1070</title>
+        <url>https://github.com/facebook/create-react-app/pull/6219</url>
+        <openerName>someProg</openerName>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <mergedAt>2019-01-20T12:00:00Z</mergedAt>
+        <closedAt></closedAt>
+        <checkPass>true</checkPass>
+        <labels>
+            <label>tag: breaking change</label>
+        </labels>
+        <comments>5</comments>
+    </pullRequest>
+    <pullRequest id="6219">
+        <title>removes use of clearConsole() in some instances</title>
+        <url>https://github.com/facebook/create-react-app/pull/6219</url>
+        <openerName>trueadm</openerName>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <mergedAt></mergedAt>
+        <closedAt></closedAt>
+        <checkPass>true</checkPass>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: new feature</label>
+        </labels>
+        <comments>0</comments>
+    </pullRequest>
+    <pullRequest id="6219">
+        <title>Adds Babel plugin babel-plugin-optimize-react</title>
+        <url>https://github.com/facebook/create-react-app/pull/6219</url>
+        <openerName>visnup</openerName>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <mergedAt></mergedAt>
+        <closedAt></closedAt>
+        <checkPass>false</checkPass>
+        <labels>
+            <label>tag: bug fix</label>
+            <label>tag: breaking change</label>
+        </labels>
+        <comments>150</comments>
+    </pullRequest>
+    <pullRequest id="6219">
+        <title>Relax aria-role  linting for developer-created components</title>
+        <url>https://github.com/facebook/create-react-app/pull/6219</url>
+        <openerName>babay</openerName>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <mergedAt>2019-01-20T12:00:00Z</mergedAt>
+        <closedAt></closedAt>
+        <checkPass></checkPass>
+        <labels>
+        </labels>
+        <comments>150</comments>
+    </pullRequest>
 </pullRequests>
