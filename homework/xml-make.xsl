@@ -17,6 +17,9 @@
     <xsl:template match="div/div">
         <pull>
             <xsl:apply-templates select="div//span[@class='opened-by']"/>
+            <type>
+                <xsl:apply-templates select="div//span[@class='tooltipped tooltipped-e']"/>
+            </type>
             <tags>
                 <xsl:apply-templates select="div//span[@class='labels lh-default']/a"/>
             </tags>
@@ -47,12 +50,13 @@
 
     <!--checks (status) template-->
     <xsl:template match="div[@class='commit-build-statuses']">
-        <!--<checks>-->
-        <!--<xsl:value-of select="./a/@aria-label"/>-->
-        <!--</checks>-->
         <passed>
             <xsl:apply-templates select="./a/svg"/>
         </passed>
+    </xsl:template>
+
+    <xsl:template match="span[@class='tooltipped tooltipped-e']">
+        <xsl:value-of select="@aria-label"/>
     </xsl:template>
 
     <!--checks passed template-->

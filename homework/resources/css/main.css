@@ -6,6 +6,27 @@
   margin: 3px;
 }
 
-.svg-messages{
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline
+}
+
+h5 {
+  margin: 10px;
+}
+.svg-messages {
   margin: 3px;
+}
+
+table {
+  border-radius: 5px;
+  border-style: hidden; /* hide standard table (collapsed) border */
+  box-shadow: 0 0 0 1px #e1e4e8; /* this draws the table border  */
+}
+
+th {
+  background: #f6f8fa;
+  color: #5c6069;
+  font-weight: 400;
 }

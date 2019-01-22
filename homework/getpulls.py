@@ -6,7 +6,7 @@ import os.path
 from lxml import etree
 from lxml.html.soupparser import parse
 
-DEFAULT_URL = "https://github.com/facebook/create-react-app/pulls"
+DEFAULT_URL = "https://github.com/facebook/create-react-app/pulls?q=is%3Apr"
 PULLS_HTML = 'pulls.html'
 
 
