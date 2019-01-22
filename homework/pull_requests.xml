@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xml"?>
+<pullRequests>
+    <pullRequest id="6219">
+        <title>Adds Babel plugin babel-plugin-optimize-react</title>
+        <htmlUrl>https://github.com/facebook/create-react-app/pull/6219</htmlUrl>
+        <user>
+            <name>trueadm</name>
+            <url>https://api.github.com/users/trueadm"</url>
+        </user>
+        <currentState>open</currentState>
+        <states>
+           <state>
+               <name>open</name>
+               <time>2019-01-20T12:00:00Z</time>
+           </state>
+            <state>
+                <name>merged</name>
+                <time></time>
+            </state>
+            <state>
+                <name>closed</name>
+                <time></time>
+            </state>
+        </states>
+        <assignees>
+            <assignee>
+                <name>trueAssignee</name>
+                <url>https://api.github.com/users/trueAssignee</url>
+            </assignee>
+        </assignees>
+
+        <requstedReviewers>
+            <reviewer>
+                <name></name>
+                <url></url>
+            </reviewer>
+        </requstedReviewers>
+        <labels>
+            <label>
+                <name>CLA Signed</name>
+                <color>009900</color>
+            </label>
+            <label>
+                <name>tag:documentation</name>
+                <color>006b75</color>
+            </label>
+        </labels>
+        <comments>10</comments>
+    </pullRequest>
+        <pullRequest id="6219">
+        <title>Adds Babel plugin babel-plugin-optimize-react</title>
+        <htmlUrl>https://github.com/facebook/create-react-app/pull/6219</htmlUrl>
+        <user>
+            <name>trueadm</name>
+            <url>https://api.github.com/users/trueadm"</url>
+        </user>
+        <currentState>closed</currentState>
+        <states>
+           <state>
+               <name>open</name>
+               <time></time>
+           </state>
+            <state>
+                <name>merged</name>
+                <time></time>
+            </state>
+            <state>
+                <name>closed</name>
+                <time>2019-01-20T12:00:00Z</time>
+            </state>
+        </states>
+        <assignees>
+            <assignee>
+                <name>trueAssignee</name>
+                <url>https://api.github.com/users/trueAssignee</url>
+            </assignee>
+        </assignees>
+
+        <requstedReviewers>
+            <reviewer>
+                <name></name>
+                <url></url>
+            </reviewer>
+        </requstedReviewers>
+        <labels>
+            <label>
+                <name>CLA Signed</name>
+                <color>009900</color>
+            </label>
+            <label>
+                <name>tag:documentation</name>
+                <color>006b75</color>
+            </label>
+        </labels>
+        <comments>10</comments>
+    </pullRequest>
+    <pullRequest id="6219">
+<title>Adds Babel plugin babel-plugin-optimize-react</title>
+<htmlUrl>https://github.com/facebook/create-react-app/pull/6219</htmlUrl>
+<user>
+    <name>trueadm</name>
+    <url>https://api.github.com/users/trueadm"</url>
+</user>
+<currentState>merged</currentState>
+<states>
+    <state>
+        <name>open</name>
+        <time>2019-01-20T12:00:00Z</time>
+    </state>
+    <state>
+        <name>merged</name>
+        <time>2019-01-20T12:00:00Z</time>
+    </state>
+    <state>
+        <name>closed</name>
+        <time></time>
+    </state>
+</states>
+<assignees>
+    <assignee>
+        <name>trueAssignee</name>
+        <url>https://api.github.com/users/trueAssignee</url>
+    </assignee>
+</assignees>
+
+<requstedReviewers>
+    <reviewer>
+        <name></name>
+        <url></url>
+    </reviewer>
+</requstedReviewers>
+<labels>
+    <label>
+        <name>CLA Signed</name>
+        <color>009900</color>
+    </label>
+    <label>
+        <name>tag:documentation</name>
+        <color>006b75</color>
+    </label>
+</labels>
+<comments>10</comments>
+</pullRequest>
+</pullRequests>
