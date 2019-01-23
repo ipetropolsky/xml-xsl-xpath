@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pullRequestsList>
+    <pullRequest id="242021010" number="6116" state="open">
+        <title>Set module resolution based on baseUrl in jsconfig/tsconfig.json</title>
+        <user id="14931924" type="User">
+            <login>rovansteen</login>
+            <url>https://github.com/rovansteen</url>
+            <avatar>
+                <url>https://avatars0.githubusercontent.com/u/14931924?v=4</url>
+            </avatar>
+        </user>
+        <body><![CDATA[~Based on [this thread](https://twitter.com/dan_abramov/status/1080821938224857088) on Twitter here is a PR to kickstart development/discussion on supporting absolute paths in Typescript via NODE_PATH so they work consistently between JS & TS.~\r\n\r\nUpdated: Based on
+ the discussion here: https://github.com/facebook/create-react-app/issues/5645#issuecomment-451170386 This attempts to unify the configuration by reading `baseUrl` from `jsconfig.json` / `tsconfig.json`.\r\n\r\nTo do:\r\n- [ ] Add tests\r\n]]>
+        </body>
+        <createdAt>2019-01-03T15:08:45Z</createdAt>
+        <updatedAt>2019-01-03T16:21:47Z</updatedAt>
+        <closedAt></closedAt>
+        <mergedAt></mergedAt>
+        <labels>
+            <label id="409579052" color="009900">
+                <name>CLA Signed</name>
+            </label>
+        </labels>
+        <checks>
+            <check>
+                <description>continuous-integration/travis-ci/pr</description>
+                <status>succsess</status>
+            </check>
+            <check>
+                <description>deploy/netlify </description>
+                <status>succsess</status>
+            </check>
+        </checks>
+        <commitRef type="head" sha="c905e10a3eff954dadee0ac6c5731ac5e65bca4d">
+            <branch> 
+                <name>typescript-node-path</name>
+            </branch>
+            <user id="14931924" type="User">
+                <login>rovansteen</login>
+                <url>https://github.com/rovansteen</url>
+                <avatar>
+                    <url>https://avatars0.githubusercontent.com/u/14931924?v=4</url>
+                </avatar>
+            </user>
+            <repo id="163979256">
+                <name>create-react-app</name>
+                <fullName>rovansteen/create-react-app</fullName>
+                <private>false</private>
+                <url>https://github.com/rovansteen/create-react-app</url>
+                <description>Set up a modern web app by running one command.</description>
+                <fork>true</fork>
+            </repo>
+        </commitRef>
+        <commitRef type="base" sha="4c7c3c5e28b7840de42755a17112804ff5a18c25">
+            <branch> 
+                <name>master</name>
+            </branch>
+            <user id="69631" type="Organization">
+                <login>facebook</login>
+                <url>https://github.com/facebook</url>
+                <avatar>
+                    <url>https://avatars3.githubusercontent.com/u/69631?v=4</url>
+                </avatar>
+            </user>
+            <repo id="63537249">
+                <name>create-react-app</name>
+                <fullName>facebook/create-react-app</fullName>
+                <private>false</private>
+                <url>https://github.com/rovansteen/create-react-app</url>
+                <description>Set up a modern web app by running one command.</description>
+                <fork>false</fork>
+            </repo>
+        </commitRef>
+        <comments>
+            <comment id="451170630">
+                <url>https://github.com/facebook/create-react-app/pull/6116#issuecomment-451170630</url>
+                <user id="6422482" type="User">
+                    <login>facebook-github-bot</login>
+                    <url>https://api.github.com/users/facebook-github-bot</url>
+                    <avatar>
+                        <url>https://avatars3.githubusercontent.com/u/6422482?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2019-01-03T15:08:54Z</createdAt>
+                <updatedAt>2019-01-03T15:08:54Z</updatedAt>
+                <body>Thank you for your pull request and welcome to our community. We require contributors to sign our Contributor License Agreement, and we don't seem to have you on file. In order for us to review and merge your code, please sign up at https://code.facebook.com/cla. **If you are contributing on behalf of someone else (eg your employer)**, the individual CLA may not be sufficient and your employer may need the corporate CLA signed.\n\nIf you have received this in error or have any questions, please contact us at [cla@fb.com](mailto:cla@fb.com?subject=CLA%20for%20facebook%2Fcreate-react-app%20%236116). Thanks!</body>
+            </comment>
+            <comment id="451173942">
+                <url>https://github.com/facebook/create-react-app/pull/6116#issuecomment-451171541</url>
+                <user id="810438" type="User">
+                    <login>gaearon</login>
+                    <url>https://github.com/gaearon</url>
+                    <avatar>
+                        <url>https://avatars0.githubusercontent.com/u/810438?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2019-01-03T15:11:50Z</createdAt>
+                <updatedAt>2019-01-03T15:11:50Z</updatedAt>
+                <body>`@` is likely a larger chunk of work so it's better to do separately.\r\n\r\nWe'll need to test Windows.\r\n\r\n---\r\n\r\nWhile we're at it, I also have an alternative proposal: https://github.com/facebook/create-react-app/issues/5645#issuecomment-451170386. What do you think about it?</body>
+            </comment>
+            <comment id="451173942">
+                <url>https://github.com/facebook/create-react-app/pull/6116#issuecomment-451173942</url>
+                <user id="6422482" type="User">
+                    <login>facebook-github-bot</login>
+                    <url>https://github.com/facebook-github-bot</url>
+                    <avatar>
+                        <url>https://avatars3.githubusercontent.com/u/6422482?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2019-01-03T15:19:09Z</createdAt>
+                <updatedAt>2019-01-03T15:19:09Z</updatedAt>
+                <body>Thank you for signing our Contributor License Agreement. We can now accept your code for this (and any) Facebook open source project. Thanks!</body>
+            </comment>
+        </comments>
+    </pullRequest>
+
+    <pullRequest id="241427596" number="6102" state="open">
+        <title>removes use of clearConsole() in some instances</title>
+        <user id="3419661" type="User">
+            <login>drewswaycool</login>
+            <url>https://github.com/drewswaycool</url>
+            <avatar>
+                <url>https://avatars3.githubusercontent.com/u/3419661?v=4</url>
+            </avatar>
+        </user>
+        <body><![CDATA[Issue: for some reason `clearConsole();` was being used in a few places that no longer seem relevant.\r\n\r\n_Note:_ I really am unsure why a developer would want their terminal cleared when doing development. I imagine there may have been a reason at some point and pe
+rhaps there still is?\r\n\r\n<hr>\r\n\r\n**when running `npm start`** BEFORE:\r\n_Here you lose all history of previous activity in your terminal._\r\n<img width=\"802\" alt=\"screen shot 2018-12-28 at 11 24 56 pm\" src=\"https://user-images.githubusercontent.com/3419661/50534319-4
+0fcfe80-0af8-11e9-9bef-0bab43325163.png\">\r\n\r\n**when running `npm start`** AFTER:\r\n_Here your history is preserved._\r\n<img width=\"807\" alt=\"screen shot 2018-12-28 at 11 27 59 pm\" src=\"https://user-images.githubusercontent.com/3419661/50534322-46f2df80-0af8-11e9-8ba6-4d
+6fd148c234.png\">\r\n]]>
+        </body>
+        <createdAt>2018-12-29T06:30:56Z</createdAt>
+        <updatedAt>2018-12-30T13:47:56Z</updatedAt>
+        <closedAt></closedAt>
+        <mergedAt></mergedAt>
+        <labels>
+            <label id="409579052" color="009900">
+                <name>CLA Signed</name>
+            </label>
+        </labels>
+        <checks>
+            <check>
+                <description>continuous-integration/travis-ci/pr</description>
+                <status>failed</status>
+            </check>
+            <check>
+                <description>deploy/netlify </description>
+                <status>succsess</status>
+            </check>
+        </checks>
+        <commitRef type="head" sha="caad1bbffca683eea9d79e99335df07d76fb7684">
+            <branch> 
+                <name>master</name>
+            </branch>
+            <user id="3419661" type="User">
+                <login>drewswaycool</login>
+                <url>https://github.com/drewswaycool</url>
+                <avatar>
+                    <url>https://avatars3.githubusercontent.com/u/3419661?v=4</url>
+                </avatar>
+            </user>
+            <repo id="163480939">
+                <name>create-react-app</name>
+                <fullName>drewswaycool/create-react-app</fullName>
+                <private>false</private>
+                <url>https://github.com/drewswaycool/create-react-app</url>
+                <description>Set up a modern web app by running one command.</description>
+                <fork>true</fork>
+            </repo>
+        </commitRef>
+        <commitRef type="base" sha="bf669a3a84c408d69aa7f2c8fd62b3efaea7910e">
+            <branch> 
+                <name>master</name>
+            </branch>
+            <user id="69631" type="Organization">
+                <login>facebook</login>
+                <url>https://github.com/facebook</url>
+                <avatar>
+                    <url>https://avatars3.githubusercontent.com/u/69631?v=4</url>
+                </avatar>
+            </user>
+            <repo id="63537249">
+                <name>create-react-app</name>
+                <fullName>facebook/create-react-app</fullName>
+                <private>false</private>
+                <url>https://github.com/rovansteen/create-react-app</url>
+                <description>Set up a modern web app by running one command.</description>
+                <fork>false</fork>
+            </repo>
+        </commitRef>
+        <comments>
+            <comment id="450469829">
+                <url>https://github.com/facebook/create-react-app/pull/6102#issuecomment-450469829</url>
+                <user id="6422482" type="User">
+                    <login>facebook-github-bot</login>
+                    <url>https://api.github.com/users/facebook-github-bot</url>
+                    <avatar>
+                        <url>https://avatars3.githubusercontent.com/u/6422482?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2018-12-29T06:31:46Z</createdAt>
+                <updatedAt>2018-12-29T06:31:46Z</updatedAt>
+                <body>Thank you for your pull request and welcome to our community. We require contributors to sign our Contributor License Agreement, and we don't seem to have you on file. In order for us to review and merge your code, please sign up at https://code.facebook.com/cla. **If you are contributing on behalf of someone else (eg your employer)**, the individual CLA may not be sufficient and your employer may need the corporate CLA signed.\n\nIf you have received this in error or have any questions, please contact us at [cla@fb.com](mailto:cla@fb.com?subject=CLA%20for%20facebook%2Fcreate-react-app%20%236102). Thanks!</body>
+            </comment>
+            <comment id="450470230">
+                <url>https://github.com/facebook/create-react-app/pull/6102#issuecomment-450470230</url>
+                <user id="6422482" type="User">
+                    <login>facebook-github-bot</login>
+                    <url>https://github.com/facebook-github-bot</url>
+                    <avatar>
+                        <url>https://avatars3.githubusercontent.com/u/6422482?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2018-12-29T06:39:57Z</createdAt>
+                <updatedAt>2018-12-29T06:39:57Z</updatedAt>
+                <body>Thank you for signing our Contributor License Agreement. We can now accept your code for this (and any) Facebook open source project. Thanks!</body>
+            </comment>
+            <comment id="450561927">
+                <url>https://github.com/facebook/create-react-app/pull/6102#issuecomment-450561927</url>
+                <user id="7641760" type="User">
+                    <login>petetnt</login>
+                    <url>https://github.com/petetnt</url>
+                    <avatar>
+                        <url>https://avatars2.githubusercontent.com/u/7641760?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2018-12-30T13:47:56Z</createdAt>
+                <updatedAt>2018-12-30T13:47:56Z</updatedAt>
+                <body>I'd assume that the reason isa to provide a clean slate to start development from and to ensure that the relevant information regarding _CRA_ would always be visible after launching regardless of the previous scroll state etc. of the terminal window before the launch.\r\n\r\n\r\n</body>
+            </comment>
+        </comments>
+    </pullRequest>
+    <pullRequest id="241103226" number="6095" state="open">
+        <title>Changes to steps for publishing GitHub User Page</title>
+        <user id="43496238" type="User">
+            <login>StevenTan</login>
+            <url>https://github.com/StevenTan</url>
+            <avatar>
+                <url>https://avatars2.githubusercontent.com/u/43496238?v=4</url>
+            </avatar>
+        </user>
+        <body><![CDATA[**Action taken:** \r\nUpdate to Documentation. Removed the the step for switching to 'gh-pages' branch as it is no longer a viable option.\r\n\r\n**Reason:**\r\nAs per stated on GitHub, Pages for User and Organisation could only be published from 'master' branch. The o
+ption to switch to another branch is no longer a viable option.\r\n\r\n**Extract from GitHub:**\r\n\"_If your site is a User or Organization Page that has a repository named <username>.github.io or <orgname>.github.io , you cannot publish your site's source files from different loc
+ations. User and Organization Pages that have this type of repository name are only published from the master branch._\"\r\n\r\n**GitHub reference:** \r\nhttps://help.github.com/articles/configuring-a-publishing-source-for-github-pages/\r\n\r\n**Note:**\r\nIn the case of a user's p
+age, users only need to do the second step, instead of two. \r\n\r\n\"_Additionally, tweak your package.json scripts to push deployments to master_\" solely would suffice as per tested on my own Github User Page. (StevenTan.GitHub.io)\r\n\r\nThanks,\r\nSteven\r\n\r\n<!--\r\nThank y
+ou for sending the PR!\r\n\r\nIf you changed any code, please provide us with clear instructions on how you verified your changes work. Bonus points for screenshots!\r\n\r\nHappy contributing!\r\n-->]]>
+        </body>
+        <createdAt>2018-12-27T08:37:45Z</createdAt>
+        <updatedAt>2018-12-27T08:51:51Z</updatedAt>
+        <closedAt></closedAt>
+        <mergedAt></mergedAt>
+        <labels>
+            <label id="409579052" color="009900">
+                <name>CLA Signed</name>
+            </label>
+        </labels>
+        <checks>
+            <check>
+                <description>continuous-integration/travis-ci/pr</description>
+                <status>succsess</status>
+            </check>
+            <check>
+                <description>deploy/netlify </description>
+                <status>succsess</status>
+            </check>
+        </checks>
+        <commitRef type="head" sha="609c985fc96e86a3abe2d4391915437004d9ca73">
+            <branch> 
+                <name>patch-1</name>
+            </branch>
+            <user id="43496238" type="User">
+                <login>StevenTan</login>
+                <url>https://github.com/StevenTan</url>
+                <avatar>
+                    <url>https://avatars2.githubusercontent.com/u/43496238?v=4</url>
+                </avatar>
+            </user>
+            <repo id="163268718">
+                <name>create-react-app</name>
+                <fullName>StevenTan/create-react-app</fullName>
+                <private>false</private>
+                <url>https://github.com/StevenTan/create-react-app</url>
+                <description>Set up a modern web app by running one command.</description>
+                <fork>true</fork>
+            </repo>
+        </commitRef>
+        <commitRef type="base" sha="e7b975e8c261a50e08b044fd8426243037db6d54">
+            <branch> 
+                <name>master</name>
+            </branch>
+            <user id="69631" type="Organization">
+                <login>facebook</login>
+                <url>https://github.com/facebook</url>
+                <avatar>
+                    <url>https://avatars3.githubusercontent.com/u/69631?v=4</url>
+                </avatar>
+            </user>
+            <repo id="63537249">
+                <name>create-react-app</name>
+                <fullName>facebook/create-react-app</fullName>
+                <private>false</private>
+                <url>https://github.com/rovansteen/create-react-app</url>
+                <description>Set up a modern web app by running one command.</description>
+                <fork>false</fork>
+            </repo>
+        </commitRef>
+        <comments>
+            <comment id="450104473">
+                <url>https://github.com/facebook/create-react-app/pull/6095#issuecomment-450104473</url>
+                <user id="6422482" type="User">
+                    <login>facebook-github-bot</login>
+                    <url>https://api.github.com/users/facebook-github-bot</url>
+                    <avatar>
+                        <url>https://avatars3.githubusercontent.com/u/6422482?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2018-12-27T08:37:52Z</createdAt>
+                <updatedAt>2018-12-27T08:37:52Z</updatedAt>
+                <body>Thank you for your pull request and welcome to our community. We require contributors to sign our Contributor License Agreement, and we don't seem to have you on file. In order for us to review and merge your code, please sign up at https://code.facebook.com/cla. **If you are contributing on behalf of someone else (eg your employer)**, the individual CLA may not be sufficient and your employer may need the corporate CLA signed.\n\nIf you have received this in error or have any questions, please contact us at [cla@fb.com](mailto:cla@fb.com?subject=CLA%20for%20facebook%2Fcreate-react-app%20%236095). Thanks!</body>
+            </comment>
+            <comment id="450106419">
+                <url>https://github.com/facebook/create-react-app/pull/6095#issuecomment-450106419</url>
+                <user id="6422482" type="User">
+                    <login>facebook-github-bot</login>
+                    <url>https://github.com/facebook-github-bot</url>
+                    <avatar>
+                        <url>https://avatars3.githubusercontent.com/u/6422482?v=4</url>
+                    </avatar>
+                </user>
+                <createdAt>2018-12-27T08:49:40Z</createdAt>
+                <updatedAt>2018-12-27T08:49:40Z</updatedAt>
+                <body>Thank you for signing our Contributor License Agreement. We can now accept your code for this (and any) Facebook open source project. Thanks!</body>
+            </comment>
+        </comments>
+    </pullRequest>
+</pullRequestsList>
