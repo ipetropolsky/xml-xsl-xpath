@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:variable name="lowercase">abcdefghijklmnopqrstuvwxyz</xsl:variable>
-  <xsl:variable name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
-  <xsl:variable name="punctuation"> :</xsl:variable>
-  <xsl:variable name="dashes">-</xsl:variable>
 
   <xsl:variable name="pr_icon_merged">
     <svg viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
@@ -40,15 +36,10 @@
     </svg>
   </xsl:variable>
 
-  <xsl:output method="html" encoding="utf-8" indent="yes"/>
+  <xsl:output method="html" encoding="utf-8" indent="yes"
+              doctype-system="about:legacy-compat"/>
 
-  <xsl:template match="/">
-    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;
-    </xsl:text>
-    <xsl:apply-templates/>
-  </xsl:template>
-
-  <xsl:template match="pulls">
+  <xsl:template match="/pulls">
     <html>
       <head>
         <title>Pull Requests</title>
@@ -64,7 +55,7 @@
             </div>
             <div class="pull-requests-count-closed">
               <xsl:copy-of select="$icon_check"/>
-              <xsl:value-of select="count(pull[status='closed']) + count(pull[status='merged'])"/>
+              <xsl:value-of select="count(pull[status='closed' or status='merged'])"/>
               <xsl:text> Closed</xsl:text>
             </div>
           </div>
@@ -74,46 +65,49 @@
     </html>
   </xsl:template>
 
-  <xsl:template match="pull">
+  <xsl:template match="pull[status='open']">
     <div class="pull-request">
-      <div>
-        <xsl:attribute name="class">
-          <xsl:text>pull-request-icon pull-request-icon-</xsl:text>
-          <xsl:value-of select="status"/>
-        </xsl:attribute>
-        <xsl:attribute name="title">
-          <xsl:value-of select="concat(translate(substring(status,1,1), $lowercase, $uppercase),
-                                substring(status,2))"/>
-                                <xsl:text> pull request</xsl:text>
-        </xsl:attribute>
-        <xsl:apply-templates select="status"/>
+      <div class="pull-request-icon pull-request-icon-open">
+        <xsl:copy-of select="$pr_icon"/>
       </div>
-      <div class="pull-request-data">
-        <div class="pr-title-labels-comments">
-          <div class="pr-title-and-labels">
-            <xsl:apply-templates select="title"/>
-            <xsl:apply-templates select="@checksSuccess"/>
-            <span class="labels">
-              <xsl:apply-templates select="labels"/>
-            </span>
-          </div>
-          <xsl:apply-templates select="@comments"/>
-        </div>
-        <div class="pr-data-and-author">
-          <xsl:apply-templates select="created"/>
-          <xsl:apply-templates select="merged"/>
-          <xsl:apply-templates select="closed"/>
-        </div>
-      </div>
+      <xsl:apply-templates select="." mode="data"/>
     </div>
   </xsl:template>
 
-  <xsl:template match="status[.='merged']">
-    <xsl:copy-of select="$pr_icon_merged"/>
+  <xsl:template match="pull[status='closed']">
+    <div class="pull-request">
+      <div class="pull-request-icon pull-request-icon-closed">
+        <xsl:copy-of select="$pr_icon"/>
+      </div>
+      <xsl:apply-templates select="." mode="data"/>
+    </div>
   </xsl:template>
 
-  <xsl:template match="status">
-    <xsl:copy-of select="$pr_icon"/>
+  <xsl:template match="pull[status='merged']">
+    <div class="pull-request">
+      <div class="pull-request-icon pull-request-icon-merged">
+        <xsl:copy-of select="$pr_icon_merged"/>
+      </div>
+      <xsl:apply-templates select="." mode="data"/>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="pull" mode="data">
+    <div class="pull-request-data">
+      <div class="pr-title-labels-comments">
+        <div class="pr-title-and-labels">
+          <xsl:apply-templates select="." mode="title"/>
+          <xsl:apply-templates select="." mode="checks"/>
+          <span class="labels">
+            <xsl:apply-templates select="labels"/>
+          </span>
+        </div>
+        <xsl:apply-templates select="@comments"/>
+      </div>
+      <div class="pr-date-and-author">
+        <xsl:apply-templates select="." mode="date_and_author"/>
+      </div>
+    </div>
   </xsl:template>
 
   <xsl:template match="@comments">
@@ -123,82 +117,62 @@
     </span>
   </xsl:template>
 
-  <xsl:template match="created">
-    #<xsl:value-of select="../@id"/> opened <xsl:value-of select="."/>
-    by <xsl:apply-templates select="../author"/>
+  <xsl:template match="pull[status='open']" mode="date_and_author">
+    #<xsl:value-of select="@id"/> opened <xsl:value-of select="created"/>
+    by <xsl:apply-templates select="author"/>
   </xsl:template>
 
-  <xsl:template match="merged">
-    <span>#<xsl:value-of select="../@id"/></span> by <xsl:apply-templates select="../author"/>
-    merged <xsl:value-of select="."/>
+  <xsl:template match="pull[status='merged']" mode="date_and_author">
+    <span>#<xsl:value-of select="@id"/></span> by <xsl:apply-templates select="author"/>
+    merged <xsl:value-of select="merged"/>
   </xsl:template>
 
-  <xsl:template match="closed">
-    <span>#<xsl:value-of select="../@id"/></span> by <xsl:apply-templates select="../author"/>
-    closed <xsl:value-of select="."/>
+  <xsl:template match="pull[status='closed']" mode="date_and_author">
+    <span>#<xsl:value-of select="@id"/></span> by <xsl:apply-templates select="author"/>
+    closed <xsl:value-of select="closed"/>
   </xsl:template>
 
   <xsl:template match="author">
-    <a class="pr-author">
-      <xsl:attribute name="href">
-        <xsl:text>https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3A</xsl:text>
-        <xsl:value-of select="."/>
-      </xsl:attribute>
+    <a class="pr-author"
+       href="{concat('https://github.com/', /pulls/@user, '/', /pulls/@repo,
+                     '/issues?q=is%3Apr+author%3A', .)}">
       <xsl:value-of select="."/>
     </a>
   </xsl:template>
 
   <xsl:template match="label">
-    <span>
-      <xsl:attribute name="class">
-        <xsl:text>label </xsl:text>
-        <xsl:if test="starts-with(., 'tag:')">
-          <xsl:call-template name="label-tag"/>
-        </xsl:if>
-        <xsl:text>label-</xsl:text>
-        <xsl:value-of
-            select="translate(translate(.,$uppercase,$lowercase),$punctuation,$dashes)"/>
-      </xsl:attribute>
-      <xsl:value-of select="."/>
-    </span>
-  </xsl:template>
-
-  <xsl:template name="label-tag">
-    <xsl:text>label-tag </xsl:text>
-  </xsl:template>
-
-  <xsl:template match="@checksSuccess">
-    <span>
-      <xsl:attribute name="title">
+    <span class="label">
+      <xsl:attribute name="data-label">
         <xsl:value-of select="."/>
-        <xsl:text> / </xsl:text>
-        <xsl:value-of select="../@checksTotal"/>
-        <xsl:text> checks OK</xsl:text>
       </xsl:attribute>
-      <xsl:choose>
-        <xsl:when test=". = ../@checksTotal">
-          <xsl:attribute name="class">
-            <xsl:text>checks checks-success</xsl:text>
-          </xsl:attribute>
-          <xsl:copy-of select="$icon_check"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="class">
-            <xsl:text>checks checks-failed</xsl:text>
-          </xsl:attribute>
-          <xsl:copy-of select="$icon_x"/>
-        </xsl:otherwise>
-      </xsl:choose>
+      <xsl:value-of select="."/>
     </span>
   </xsl:template>
 
-  <xsl:template match="title">
-    <a class="pr-title">
-      <xsl:attribute name="href">
-        <xsl:text>https://github.com/facebook/create-react-app/pull/</xsl:text>
-        <xsl:value-of select="../@id"/>
-      </xsl:attribute>
-      <xsl:value-of select="."/>
+  <xsl:template match="pull" mode="checks">
+    <span title="{concat(@checksPassed, ' / ', @checksTotal, ' checks OK')}">
+      <xsl:apply-templates select="@checksSuccess"/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="@checksSuccess[.='true']">
+    <xsl:attribute name="class">
+      <xsl:text>checks checks-success</xsl:text>
+    </xsl:attribute>
+    <xsl:copy-of select="$icon_check"/>
+  </xsl:template>
+
+  <xsl:template match="@checksSuccess[.='false']">
+    <xsl:attribute name="class">
+      <xsl:text>checks checks-failed</xsl:text>
+    </xsl:attribute>
+    <xsl:copy-of select="$icon_x"/>
+  </xsl:template>
+
+  <xsl:template match="pull" mode="title">
+    <a class="pr-title"
+       href="{concat('https://github.com/', /pulls/@user, '/', /pulls/@repo, '/pull/', @id)}">
+      <xsl:value-of select="title"/>
     </a>
   </xsl:template>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pulls>
-  <pull id="6162" checksTotal="2" checksSuccess="1" comments="2">
+<pulls user="facebook" repo="create-react-app">
+  <pull id="6162" checksTotal="2" checksPassed="1" checksSuccess="false" comments="2">
     <title>Update react-dev-util globby dependency to v8.0.2</title>
     <status>merged</status>
     <merged>2019-01-09 22:24 GMT+3</merged>
@@ -9,7 +9,7 @@
       <label>CLA Signed</label>
     </labels>
   </pull>
-  <pull id="6160" checksTotal="2" checksSuccess="1">
+  <pull id="6160" checksTotal="2" checksPassed="1" checksSuccess="false">
     <title>Suggests that tsconfig.json is incorrect only when SyntaxError is caught</title>
     <status>open</status>
     <created>2019-01-09 17:44 GMT+3</created>
@@ -18,7 +18,7 @@
       <label>CLA Signed</label>
     </labels>
   </pull>
-  <pull id="6157" checksTotal="3" checksSuccess="1" comments="4">
+  <pull id="6157" checksTotal="3" checksPassed="1" checksSuccess="false" comments="4">
     <title>Add note for global install of CLI</title>
     <status>open</status>
     <created>2019-01-09 07:10 GMT+3</created>
@@ -29,7 +29,7 @@
       <label>tag: documentation</label>
     </labels>
   </pull>
-  <pull id="6151" checksTotal="2" checksSuccess="2" comments="1">
+  <pull id="6151" checksTotal="2" checksPassed="2" checksSuccess="true" comments="1">
     <title>Fix typo</title>
     <status>closed</status>
     <closed>2019-01-08 16:37 GMT+3</closed>
@@ -38,7 +38,7 @@
       <label>CLA Signed</label>
     </labels>
   </pull>
-  <pull id="6144" checksTotal="2" checksSuccess="2" comments="9">
+  <pull id="6144" checksTotal="2" checksPassed="2" checksSuccess="true" comments="9">
     <title>Added WRITE_TO_DISK environment variable. Fixes #1070</title>
     <status>open</status>
     <created>2019-01-07 14:22 GMT+3</created>
@@ -47,7 +47,7 @@
       <label>CLA Signed</label>
     </labels>
   </pull>
-  <pull id="6137" checksTotal="2" checksSuccess="1" comments="7">
+  <pull id="6137" checksTotal="2" checksPassed="1" checksSuccess="false" comments="7">
     <title>Fix CI and upgrade dependencies</title>
     <status>merged</status>
     <merged>2019-01-06 21:13 GMT+3</merged>
@@ -57,7 +57,7 @@
       <label>tag: internal</label>
     </labels>
   </pull>
-  <pull id="6132" checksTotal="2" checksSuccess="2" comments="8">
+  <pull id="6132" checksTotal="2" checksPassed="2" checksSuccess="true" comments="8">
     <title>Bump eslint-plugin-react version and update webpack config</title>
     <status>merged</status>
     <merged>2019-01-07 02:05 GMT+3</merged>
@@ -68,7 +68,7 @@
       <label>tag: underlying tools</label>
     </labels>
   </pull>
-  <pull id="6116" checksTotal="2" checksSuccess="2" comments="62">
+  <pull id="6116" checksTotal="2" checksPassed="2" checksSuccess="true" comments="62">
     <title>Set module resolution based on baseUrl in jsconfig/tsconfig.json</title>
     <status>open</status>
     <created>2019-01-03 18:08 GMT+3</created>

@@ -55,7 +55,7 @@
     border-bottom: 1px solid #e1e4e8;
 }
 
-.pr-data-and-author {
+.pr-date-and-author {
     color: #586069;
 }
 
@@ -75,32 +75,33 @@
     white-space: nowrap;
 }
 
-.label-cla-signed {
-    background-color: #009900;
-}
-
-.label-tag {
+.label {
     color: #fff;
 }
 
-.label-tag-documentation {
+.label[data-label='CLA Signed'] {
+    background-color: #009900;
+    color: #000!important;
+}
+
+.label[data-label='tag: documentation'] {
     background-color: #006b75;
 }
 
-.label-tag-internal {
+.label[data-label='tag: internal'] {
     background-color: #bfdadc;
     color: #000!important;
 }
 
-.label-tag-underlying-tools {
+.label[data-label='tag: underlying tools'] {
     background-color: #d93f0b;
 }
 
-.label-tag-breaking-change {
+.label[data-label='tag: breaking change'] {
     background-color: #e11d21;
 }
 
-.label-tag-new-feature {
+.label[data-label='tag: new-feature'] {
     background-color: #0e8a16;
 }
 
