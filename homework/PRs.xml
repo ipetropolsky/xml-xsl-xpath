@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/homework/PRs.xsl"?>
+<pulls>
+    <pull id="6276" status="open">
+        <title>Prevent cursor events on app-logo svg</title>
+        <author>kostadriano</author>
+        <date>an hour ago</date>
+        <check>X</check>
+        <comments>2</comments>
+        <tags>
+            <tag title="CLA Signed" color="green"/>
+        </tags>
+    </pull>
+    <pull id="6270" status="open">
+        <title>Minimal Mode</title>
+        <author>kenwheeler</author>
+        <date>23 hours ago</date>
+        <check>X</check>
+        <comments>27</comments>
+        <tags>
+            <tag title="CLA Signed" color="green"/>
+        </tags>
+    </pull>
+    <pull id="6268" status="close">
+        <title>Add --wheelerMode</title>
+        <author>kenwheeler</author>
+        <date>a day ago</date>
+        <check>X</check>
+        <comments>6</comments>
+        <tags>
+            <tag title="CLA Signed" color="green"/>
+        </tags>
+    </pull>
+    <pull id="6229" status="merge">
+        <title>Update `serve` port flag and add example</title>
+        <author>lyzhovnik</author>
+        <date>5 days ago</date>
+        <check>X</check>
+        <comments>5</comments>
+        <tags>
+            <tag title="CLA Signed" color="green"/>
+            <tag title="tag: documentation" color="blue"/>
+        </tags>
+    </pull>
+    <pull id="6018" status="open">
+        <title>Disable AMD</title>
+        <author>martnu</author>
+        <date>on 11 Dec 2018</date>
+        <check>OK</check>
+        <comments>3</comments>
+        <tags>
+            <tag title="CLA Signed" color="green"/>
+            <tag title="tag: breaking change" color="red"/>
+            <tag title="tag: bug fix" color="yellow"/>
+        </tags>
+    </pull>
+</pulls>
