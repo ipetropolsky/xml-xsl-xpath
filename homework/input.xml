@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><pullRequestList>
+    <pullReqquest>
+        <id>6247</id>
+        <link>https://github.com/facebook/create-react-app/pull/6247</link>
+        <author>
+            <name>cjpatoilo</name>
+            <link>https://github.com/cjpatoilo</link>
+        </author>
+        <content>Adding Jest and Enzyme as development dependencies.</content>
+        <date>2 days ago</date>
+        <commentsCount>2</commentsCount>
+        <checksOK>false</checksOK>
+    </pullReqquest>
+    <pullReqquest>
+        <id>6245</id>
+        <link>https://github.com/facebook/create-react-app/pull/6245</link>
+        <author>
+            <name>pq1949</name>
+            <link>https://github.com/pq1949</link>
+        </author>
+        <content>update default manifest link path</content>
+        <date>1 month ago</date>
+        <tags>
+            <tag>breaking change</tag>
+            <tag>new feature</tag>
+        </tags>
+        <commentsCount>13</commentsCount>
+        <checksOK>true</checksOK>
+    </pullReqquest>
+    <pullReqquest>
+        <id>6254</id>
+        <link>https://github.com/facebook/create-react-app/pull/6254</link>
+        <author>
+            <name>saranshkataria</name>
+            <link>https://github.com/saranshkataria</link>
+        </author>
+        <content>removed redundant statements</content>
+        <date>1 years ago</date>
+        <tags>
+            <tag>new feature</tag>
+        </tags>
+        <commentsCount>4</commentsCount>
+        <checksOK>false</checksOK>
+    </pullReqquest>
+    <pullReqquest>
+        <id>6270</id>
+        <link>https://github.com/facebook/create-react-app/pull/6270</link>
+        <author>
+            <name>kenwheeler</name>
+            <link>https://github.com/kenwheeler</link>
+        </author>
+        <content>Minimal Mode</content>
+        <date>0 hours ago</date>
+        <commentsCount>26</commentsCount>
+        <checksOK>false</checksOK>
+    </pullReqquest>
+    <pullReqquest>
+        <id>6255</id>
+        <link>https://github.com/facebook/create-react-app/pull/6255</link>
+        <author>
+            <name>soulspark666</name>
+            <link>https://github.com/soulspark666</link>
+        </author>
+        <content>http to https in bit.ly links</content>
+        <date>3 month ago</date>
+        <checksOK>true</checksOK>
+        <tags>
+            <tag>documentation</tag>
+        </tags>
+    </pullReqquest>
+
+
+
+</pullRequestList>
