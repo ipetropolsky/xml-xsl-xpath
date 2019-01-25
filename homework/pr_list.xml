@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prList>
+    <pullRequest>
+        <status>opened</status>
+        <name>http to https in bit.ly links</name>
+        <checked>no</checked>
+        <CLA/>
+        <id>6255</id>
+        <date>23.01.2019, 17:16 GMT+3</date>
+        <author>soulspark666</author>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <name>removed redundant statements</name>
+        <checked>no</checked>
+        <CLA/>
+        <tag>documentation</tag>
+        <id>6254</id>
+        <date>23.01.2019, 7:51 GMT+3</date>
+        <author>saranshkataria</author>
+    </pullRequest>
+    <pullRequest>
+        <status>closed</status>
+        <name>Adding Jest and Enzyme as development dependencies.</name>
+        <checked>no</checked>
+        <CLA/>
+        <comments>4</comments>
+        <id>6247</id>
+        <date>22.01.2019, 19:04 GMT+3</date>
+        <author>cjpatoilo</author>
+    </pullRequest>
+    <pullRequest>
+        <status>merged</status>
+        <name>Update `serve` port flag and add example</name>
+        <checked>yes</checked>
+        <CLA/>
+        <tag>internal</tag>
+        <comments>5</comments>
+        <id>6229</id>
+        <date>20.01.2019, 23:46 GMT+3</date>
+        <author>lyzhovnik</author>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <name>Add deployment instructions with AWS Amplify</name>
+        <checked>yes</checked>
+        <comments>1</comments>
+        <id>6208</id>
+        <date>16.01.2019, 01:23 GMT+3</date>
+        <author>swaminator</author>
+    </pullRequest>
+</prList>
