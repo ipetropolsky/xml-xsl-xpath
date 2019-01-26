@@ -65,13 +65,4 @@
     <!--checks failed template-->
     <xsl:template match="svg[@class='octicon octicon-x']">false</xsl:template>
 
-
-    <!--<xsl:template match="*">-->
-    <!--<xsl:message terminate="no">-->
-    <!--WARNING: Unmatched element: <xsl:value-of select="name()"/>-->
-    <!--</xsl:message>-->
-
-    <!--<xsl:apply-templates/>-->
-    <!--</xsl:template>-->
-
 </xsl:stylesheet>

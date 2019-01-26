@@ -7,7 +7,8 @@ from lxml import etree
 from lxml.html.soupparser import parse
 
 DEFAULT_URL = "https://github.com/facebook/create-react-app/pulls?q=is%3Apr"
-PULLS_HTML = 'pulls.html'
+PULLS_HTML = 'homework/pulls.html'
+PULLS_VALID_HTML = 'homework/pulls-valid.html'
 
 
 def load_html():
@@ -25,7 +26,7 @@ if __name__ == "__main__":
     print('HTML file is ok')
     root = parse(PULLS_HTML)
     panel_div = root.findall('.//div[@class=\'js-navigation-container js-active-navigation-container\']')[0]
-    valid_html = '<html>\n<head>\n</head>\n<body>\n{}\n</body>\n</html>'\
+    valid_html = '<html>\n<head>\n</head>\n<body>\n{}\n</body>\n</html>' \
         .format(etree.tostring(panel_div, pretty_print=True).decode('UTF-8'))
-    with open('valid-pulls.html', 'w') as valid_html_file:
+    with open(PULLS_VALID_HTML, 'w') as valid_html_file:
         valid_html_file.writelines(valid_html)
