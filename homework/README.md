@@ -1,5 +1,5 @@
 # Как запустить
-0) (*) Удалить существующий файл `pulls.html`
+0) (*) Удалить существующие файлы `pulls*`
 1) Выполнить python скрипт `python3 homework/getpulls.py [url]`. 
    Он скачает по заданному url страницу с pull requests в файл `homework/pulls.html`.
    По умолчанию url страницы `https://github.com/facebook/create-react-app/pulls?q=is%3Apr`
