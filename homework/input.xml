@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prList>
+    <pullRequest>
+        <status>merged</status>
+        <name>http to https in bit.ly links</name>
+        <checked>no</checked>
+        <CLA/>
+        <tag>internal</tag>
+        <id>5473</id>
+        <date>23.01.2019, 17:16 GMT+3</date>
+        <comments>5</comments>
+        <author>Andrey Vuatcheslavovitch</author>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <checked>yes</checked>
+        <id>1111</id>
+        <date>25.01.2019, 11:22 GMT+3</date>
+        <author>Anonymous</author>
+    </pullRequest>
+    <pullRequest>
+        <status>closed</status>
+        <name>template name</name>
+        <checked>no</checked>
+        <CLA/>
+        <tag>documentation</tag>
+        <secretInfo>nuclear missile launch code: qwerty123</secretInfo>
+        <id>4586</id>
+        <date>28.01.2019, 16:16 GMT+3</date>
+        <comments>50</comments>
+        <author>John Doe</author>
+    </pullRequest>
+</prList>
