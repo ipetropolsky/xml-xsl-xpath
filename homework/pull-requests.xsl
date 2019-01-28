@@ -15,8 +15,9 @@
             <body>
                 <div class="modal-wrapper">
                     <div class="pull-requests">
-                        <xsl:apply-templates select="pull-request"/>
-                        <!--можно вставить внутрь<xsl:sort select="id" order="descending"/>-->
+                        <xsl:apply-templates select="pull-request">
+                            <xsl:sort select="@id" order="descending"/>
+                        </xsl:apply-templates>
                     </div>
                 </div>
             </body>
