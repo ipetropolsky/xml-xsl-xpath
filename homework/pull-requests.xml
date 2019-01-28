@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pull-requests url="https://github.com/facebook/create-react-app">
+    <pull-request id="6279" state="open" checks-OK="false" comments="2">
+        <title>Specify sourceType</title>
+        <date>26-01-2019</date>
+        <author>veltman</author>
+        <version>2.1.4</version>
+        <review>Changes requested</review>
+        <tags>
+            <tag>CLA Signed</tag>
+            <tag>tag: bug fix</tag>
+        </tags>
+    </pull-request>
+    <pull-request id="6270" state="open" checks-OK="false" comments="27">
+        <title>Minimal Mode</title>
+        <date>25-01-2019</date>
+        <author>kenwheeler</author>
+        <tags>
+            <tag>CLA Signed</tag>
+            <tag>tag: new feature</tag>
+        </tags>
+    </pull-request>
+    <pull-request id="6266" state="closed" checks-OK="false" comments="3">
+        <title>Save as dev dependency</title>
+        <date>24-01-2019</date>
+        <url>https://github.com/facebook/create-react-app/pull/6266</url>
+        <author>vanillajonathan</author>
+        <tags>
+            <tag>CLA Signed</tag>
+        </tags>
+    </pull-request>
+    <pull-request id="6165" state="merged" checks-OK="true" comments="0">
+        <title>Fix CI builds</title>
+        <date>10-01-2019</date>
+        <author>ianschmitz </author>
+        <version>2.1.4</version>
+        <tags>
+            <tag>CLA Signed</tag>
+            <tag>tag: internal</tag>
+        </tags>
+    </pull-request>
+    <pull-request id="6075" state="closed" checks-OK="false" comments="4">
+        <title>Fix jest testMatch</title>
+        <date>20-12-2018</date>
+        <author>Madumo</author>
+        <tags>
+            <tag>CLA Signed</tag>
+            <tag>stale</tag>
+        </tags>
+    </pull-request>
+    <pull-request id="6150" state="merged" checks-OK="true" comments="5">
+        <title>dependencies: move chalk to react-dev-utils</title>
+        <date>08-01-2019</date>
+        <author>otaviopace</author>
+        <version>2.1.4</version>
+        <review>Approved</review>
+        <tags>
+            <tag>CLA Signed</tag>
+            <tag>tag: internal</tag>
+        </tags>
+    </pull-request>
+</pull-requests>
