@@ -15,6 +15,20 @@
             <body>
                 <div class="modal-wrapper">
                     <div class="pull-requests">
+                        <div class="pull-requests-row headline">
+                            <div class="nodes-container">
+                                <img class="pull-request-img" src="img/open.png"/>
+                                <div class="pull-requests-count">
+                                    <xsl:value-of select="count(pull-request[@state='open'])"/> Open
+                                </div>
+                            </div>
+                            <div class="nodes-container">
+                                <img class="pull-request-img" src="img/checks-OK-true.png"/>
+                                <div class="pull-requests-count">
+                                    <xsl:value-of select="count(pull-request[@state='closed' or @state='merged'])"/> Closed
+                                </div>
+                            </div>
+                        </div>
                         <xsl:apply-templates select="pull-request">
                             <xsl:sort select="@id" order="descending"/>
                         </xsl:apply-templates>
@@ -62,7 +76,7 @@
     </xsl:template>
 
     <xsl:template match="tags">
-        <div class="tags-container">
+        <div class="nodes-container">
             <xsl:apply-templates select="tag"/>
         </div>
     </xsl:template>

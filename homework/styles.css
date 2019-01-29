@@ -18,12 +18,25 @@
     width: 100%;
     align-items: center;
     height: 60px;
-    padding: 3px;
+    padding: 7px;
+}
+
+.headline {
+    background-color: #f6f8fa;
 }
 
 .pull-request-img {
     height: 14px;
     margin: 0px 5px;
+}
+
+.pull-requests-count {
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color:#58606c;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
 .pull-request {
@@ -45,7 +58,7 @@
     text-decoration: none;
 }
 
-.tags-container {
+.nodes-container {
     display: flex;
 }
 
