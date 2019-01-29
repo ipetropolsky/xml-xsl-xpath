@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xst="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output indent="yes"
                 encoding="utf-8"
@@ -17,7 +17,7 @@
             </head>
             <body>
                 <div class="wrapper">
-                    <xsl:apply-templates select="pullReqquest">
+                    <xsl:apply-templates select="pullRequest">
                         <xsl:sort select="id" order="descending"/>
                     </xsl:apply-templates>
                 </div>
@@ -25,41 +25,31 @@
         </html>
     </xsl:template>
 
-    <xsl:template match="pullReqquest">
-
+    <xsl:template match="pullRequest">
         <div class="frame">
-            <div class="mergeIco"></div>
+            <xsl:apply-templates select="status"/>
             <div class="pullRequest">
                 <div class="nameTags">
-                    <a class="pullRequestName">
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="link"/>
-                        </xsl:attribute>
+                    <a class="pullRequestName" href="{link}">
                         <xsl:value-of select="content"/>
                     </a>
                     <xsl:apply-templates select="checksOK"/>
-                    <xsl:apply-templates select="tags"/>
+                    <xsl:apply-templates select="tags/tag"/>
                 </div>
                 <div class="pullRequestInfo">
-                    <span>#
-                        <xsl:value-of select="id"/>
-                        <![CDATA[ opened ]]>
-                    </span>
-                    <span class="creationDate">
-                        <xsl:value-of select="date"/>
-                    </span>
                     <span>
-                        <![CDATA[ by ]]>
+                        <xsl:text>#</xsl:text>
+                        <xsl:value-of select="id"/>
+                        <xst:text> opened </xst:text>
+                        <xsl:value-of select="relativeTime"/>
+                        <xst:text> by </xst:text>
                     </span>
-                    <a class="authorName">
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="author/link"/>
-                        </xsl:attribute>
+                    <a class="authorName" href="{author/link}">
                         <xsl:value-of select="author/name"/>
                     </a>
                 </div>
             </div>
-            <xsl:if test="commentsCount>0">
+            <xsl:if test="commentsCount > 0">
                 <div class="comments">
                     <ico class="commentIco"/>
                     <span class="commentsCount">
@@ -70,9 +60,9 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="tags">
+    <!--xsl:template match="tags">
         <xsl:apply-templates select="tag"/>
-    </xsl:template>
+    </xsl:template-->
 
     <xsl:template match="tag">
         <div class="tag">
@@ -80,15 +70,29 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="checksOK">
-        <xsl:if test=". = 'true'">
-            <div class="checksOkIco checksIco"/>
-        </xsl:if>
-        <xsl:if test=". = 'false'">
-            <div class="checksNotOkIco checksIco"/>
-        </xsl:if>
-
+    <xsl:template match="checksOK[text() = 'true']">
+        <div class="checksOkIco checksIco"/>
     </xsl:template>
+
+    <xsl:template match="checksOK[text() = 'false']">
+        <div class="checksNotOkIco checksIco"/>
+    </xsl:template>
+
+    <xsl:template match="status[text() = 'opened']">
+        <div class="openedIco"/>
+    </xsl:template>
+
+    <xsl:template match="status[text() = 'merged']">
+        <div class="mergedIco"/>
+    </xsl:template>
+
+    <xsl:template match="status[text() = 'closed']">
+        <div class="closedIco"/>
+    </xsl:template>
+
+
+
+
 
 
 </xsl:stylesheet>

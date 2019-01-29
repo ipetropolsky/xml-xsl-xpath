@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <pullRequestList>
-    <pullReqquest>
+    <pullRequest>
         <id>6247</id>
         <link>https://github.com/facebook/create-react-app/pull/6247</link>
         <author>
@@ -8,11 +8,12 @@
             <link>https://github.com/cjpatoilo</link>
         </author>
         <content>Adding Jest and Enzyme as development dependencies.</content>
-        <date>22.01.2019 19:23</date>
+        <openDate date="22.01.2019 19:23:16">20190122T192316</openDate>
         <commentsCount>2</commentsCount>
         <checksOK>false</checksOK>
-    </pullReqquest>
-    <pullReqquest>
+        <status>merged</status>
+    </pullRequest>
+    <pullRequest>
         <id>6245</id>
         <link>https://github.com/facebook/create-react-app/pull/6245</link>
         <author>
@@ -20,15 +21,16 @@
             <link>https://github.com/pq1949</link>
         </author>
         <content>update default manifest link path</content>
-        <date>13.12.2018 07:37</date>
+        <openDate date="13.12.2018 07:37:44">20181213T073744</openDate>
         <tags>
             <tag>breaking change</tag>
             <tag>new feature</tag>
         </tags>
         <commentsCount>13</commentsCount>
         <checksOK>true</checksOK>
-    </pullReqquest>
-    <pullReqquest>
+        <status>opened</status>
+    </pullRequest>
+    <pullRequest>
         <id>6254</id>
         <link>https://github.com/facebook/create-react-app/pull/6254</link>
         <author>
@@ -36,14 +38,15 @@
             <link>https://github.com/saranshkataria</link>
         </author>
         <content>removed redundant statements</content>
-        <date>25.01.2017 16:21</date>
+        <openDate date="25.01.2017 16:21:31">20170125T162131</openDate>
         <tags>
             <tag>new feature</tag>
         </tags>
         <commentsCount>4</commentsCount>
         <checksOK>false</checksOK>
-    </pullReqquest>
-    <pullReqquest>
+        <status>opened</status>
+    </pullRequest>
+    <pullRequest>
         <id>6270</id>
         <link>https://github.com/facebook/create-react-app/pull/6270</link>
         <author>
@@ -51,11 +54,12 @@
             <link>https://github.com/kenwheeler</link>
         </author>
         <content>Minimal Mode</content>
-        <date>25.01.2019 03:12</date>
+        <openDate date="29.01.2019 03:12:44">20190129T031244</openDate>
         <commentsCount>26</commentsCount>
         <checksOK>false</checksOK>
-    </pullReqquest>
-    <pullReqquest>
+        <status>merged</status>
+    </pullRequest>
+    <pullRequest>
         <id>6255</id>
         <link>https://github.com/facebook/create-react-app/pull/6255</link>
         <author>
@@ -63,13 +67,11 @@
             <link>https://github.com/soulspark666</link>
         </author>
         <content>http to https in bit.ly links</content>
-        <date>20.10.2018 23:37</date>
+        <openDate date="20.10.2018 23:37:17">20181020T233717</openDate>
         <checksOK>true</checksOK>
         <tags>
             <tag>documentation</tag>
         </tags>
-    </pullReqquest>
-
-
-
+        <status>closed</status>
+    </pullRequest>
 </pullRequestList>
