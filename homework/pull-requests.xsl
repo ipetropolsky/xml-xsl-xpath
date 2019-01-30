@@ -64,13 +64,15 @@
                     </xsl:if>
                 </div>
             </div>
-            <a class="pull-request-comments">
+            <xsl:if test="not(@comments = 0)">
+                <a class="pull-request-comments">
                 <xsl:attribute name="href">
                     <xsl:value-of select="/pull-requests/@url"/>/pull/<xsl:value-of select="@id"/>
                 </xsl:attribute>
                  <img class="pull-request-img" src="img/comment.png"/>
                 <xsl:value-of select="@comments"/>
             </a>
+            </xsl:if>
         </div>
 
     </xsl:template>
