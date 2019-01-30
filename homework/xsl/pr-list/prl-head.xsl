@@ -3,13 +3,13 @@
     <xsl:template match="AdditionalInfo">
         <div class="columns is-centered has-background-light">
             <div class="column is-one-fifth has-text-weight-semibold">
-                <a href="/">
+                <a href="#">
                     <i class="fas fa-code-branch"></i>
                     <xsl:value-of select="OpenedCount"/> open
                 </a>
             </div>
             <div class="column is-one-fifth">
-                <a href="/">
+                <a href="#">
                     <i class="fas fa-check"></i>
                     <xsl:value-of select="ClosedCount"/> closed
                 </a>
