@@ -1,0 +1,86 @@
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="PullRequests">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="AdditionalInfo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:int" name="OpenedCount"/>
+                            <xs:element type="xs:int" name="ClosedCount"/>
+                            <xs:element type="xs:int" name="PagesCount"/>
+                            <xs:element type="xs:int" name="PagesSize"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Elements">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PullRequest" maxOccurs="unbounded" minOccurs="0" type="PullRequests"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="PullRequests">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Title"/>
+            <xs:element type="xs:string" name="Status"/>
+            <xs:element type="xs:dateTime" name="DateCreate"/>
+            <xs:element type="xs:string" name="DateCreateFormatted"/>
+            <xs:element type="xs:string" name="CloseDate" minOccurs="0"/>
+            <xs:element type="xs:string" name="CloseDateFormatted" minOccurs="0"/>
+            <xs:element name="User" type="User"/>
+            <xs:element name="Comments">
+                <xs:complexType mixed="true">
+                    <xs:sequence>
+                        <xs:element name="Comment" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="User" type="User"/>
+                                    <xs:element type="xs:dateTime" name="DateCreate"/>
+                                    <xs:element type="xs:string"
+                                                name="DateCreateFormatted"/>
+                                    <xs:element type="xs:string" name="Text"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="CI">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element type="xs:byte" name="ChecksNeed"/>
+                        <xs:element type="xs:byte" name="ChecksActual"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Tags">
+                <xs:complexType mixed="true">
+                    <xs:sequence>
+                        <xs:element name="Tag" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element type="xs:string" name="Level"/>
+                                    <xs:element type="xs:string" name="Value"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute type="xs:byte" name="Id"/>
+    </xs:complexType>
+
+    <xs:complexType name="User">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Name"/>
+            <xs:element type="xs:string" name="Avatar" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

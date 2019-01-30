@@ -14,6 +14,9 @@
                         <xsl:if test="$status = 'Closed'">
                             <i class="fas fa-code-branch has-text-danger" title="{$status}"/>
                         </xsl:if>
+                        <xsl:if test="$status = 'Merged'">
+                            <i class="fas fa-bezier-curve has-text-success" title="{$status}"/>
+                        </xsl:if>
 
                         <a href="#">
                             #<xsl:value-of select="@Id"/>
