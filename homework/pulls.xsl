@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:import href="labels.xsl"/>
 
   <xsl:variable name="pr_icon_merged">
     <svg viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
@@ -142,9 +143,9 @@
   </xsl:template>
 
   <xsl:template match="label">
-    <span class="label">
-      <xsl:attribute name="data-label">
-        <xsl:value-of select="."/>
+    <span>
+      <xsl:attribute name="class">
+        <xsl:apply-imports/>
       </xsl:attribute>
       <xsl:value-of select="."/>
     </span>

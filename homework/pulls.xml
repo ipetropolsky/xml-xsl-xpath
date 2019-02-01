@@ -12,7 +12,7 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
+      <label id="cla-signed">CLA Signed</label>
     </labels>
   </pull>
   <pull id="6160" checksTotal="2" checksPassed="1" checksSuccess="false">
@@ -27,7 +27,7 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
+      <label id="cla-signed">CLA Signed</label>
     </labels>
   </pull>
   <pull id="6157" checksTotal="3" checksPassed="1" checksSuccess="false" comments="4">
@@ -43,8 +43,8 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
-      <label>tag: documentation</label>
+      <label id="cla-signed">CLA Signed</label>
+      <label id="tag-documentation">tag: documentation</label>
     </labels>
   </pull>
   <pull id="6151" checksTotal="2" checksPassed="2" checksSuccess="true" comments="1">
@@ -59,7 +59,7 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
+      <label id="cla-signed">CLA Signed</label>
     </labels>
   </pull>
   <pull id="6144" checksTotal="2" checksPassed="2" checksSuccess="true" comments="9">
@@ -74,7 +74,7 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
+      <label id="cla-signed">CLA Signed</label>
     </labels>
   </pull>
   <pull id="6137" checksTotal="2" checksPassed="1" checksSuccess="false" comments="7">
@@ -89,8 +89,8 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
-      <label>tag: internal</label>
+      <label id="cla-signed">CLA Signed</label>
+      <label id="tag-internal">tag: internal</label>
     </labels>
   </pull>
   <pull id="6132" checksTotal="2" checksPassed="2" checksSuccess="true" comments="8">
@@ -106,8 +106,8 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
-      <label>tag: underlying tools</label>
+      <label id="cla-signed">CLA Signed</label>
+      <label id="tag-underlying-tools">tag: underlying tools</label>
     </labels>
   </pull>
   <pull id="6116" checksTotal="2" checksPassed="2" checksSuccess="true" comments="62">
@@ -123,9 +123,9 @@
       </link>
     </author>
     <labels>
-      <label>CLA Signed</label>
-      <label>tag: breaking change</label>
-      <label>tag: new feature</label>
+      <label id="cla-signed">CLA Signed</label>
+      <label id="tag-breaking-change">tag: breaking change</label>
+      <label id="tag-new-feature">tag: new feature</label>
     </labels>
   </pull>
 </pulls>

@@ -79,29 +79,29 @@
     color: #fff;
 }
 
-.label[data-label='CLA Signed'] {
+.label-cla-signed {
     background-color: #009900;
     color: #000!important;
 }
 
-.label[data-label='tag: documentation'] {
+.label-tag-documentation {
     background-color: #006b75;
 }
 
-.label[data-label='tag: internal'] {
+.label-tag-internal {
     background-color: #bfdadc;
     color: #000!important;
 }
 
-.label[data-label='tag: underlying tools'] {
+.label-tag-underlying-tools {
     background-color: #d93f0b;
 }
 
-.label[data-label='tag: breaking change'] {
+.label-tag-breaking-change {
     background-color: #e11d21;
 }
 
-.label[data-label='tag: new-feature'] {
+.label-tag-new-feature {
     background-color: #0e8a16;
 }
 
