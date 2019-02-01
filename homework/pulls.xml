@@ -2,28 +2,46 @@
 <pulls user="facebook" repo="create-react-app">
   <pull id="6162" checksTotal="2" checksPassed="1" checksSuccess="false" comments="2">
     <title>Update react-dev-util globby dependency to v8.0.2</title>
+    <link>https://github.com/facebook/create-react-app/pull/6162</link>
     <status>merged</status>
     <merged>2019-01-09 22:24 GMT+3</merged>
-    <author>davidlukerice</author>
+    <author>
+      <name>davidlukerice</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3Adavidlukerice
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
     </labels>
   </pull>
   <pull id="6160" checksTotal="2" checksPassed="1" checksSuccess="false">
     <title>Suggests that tsconfig.json is incorrect only when SyntaxError is caught</title>
+    <link>https://github.com/facebook/create-react-app/pull/6160</link>
     <status>open</status>
     <created>2019-01-09 17:44 GMT+3</created>
-    <author>Andarist</author>
+    <author>
+      <name>Andarist</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3AAndarist
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
     </labels>
   </pull>
   <pull id="6157" checksTotal="3" checksPassed="1" checksSuccess="false" comments="4">
     <title>Add note for global install of CLI</title>
+    <link>https://github.com/facebook/create-react-app/pull/6157</link>
     <status>open</status>
     <created>2019-01-09 07:10 GMT+3</created>
     <review>Approved</review>
-    <author>ianschmitz</author>
+    <author>
+      <name>ianschmitz</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3Aianschmitz
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
       <label>tag: documentation</label>
@@ -31,27 +49,45 @@
   </pull>
   <pull id="6151" checksTotal="2" checksPassed="2" checksSuccess="true" comments="1">
     <title>Fix typo</title>
+    <link>https://github.com/facebook/create-react-app/pull/6151</link>
     <status>closed</status>
     <closed>2019-01-08 16:37 GMT+3</closed>
-    <author>hantq</author>
+    <author>
+      <name>hantq</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3Ahantq
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
     </labels>
   </pull>
   <pull id="6144" checksTotal="2" checksPassed="2" checksSuccess="true" comments="9">
     <title>Added WRITE_TO_DISK environment variable. Fixes #1070</title>
+    <link>https://github.com/facebook/create-react-app/pull/6144</link>
     <status>open</status>
     <created>2019-01-07 14:22 GMT+3</created>
-    <author>ioloie</author>
+    <author>
+      <name>ioloie</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3Aioloie
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
     </labels>
   </pull>
   <pull id="6137" checksTotal="2" checksPassed="1" checksSuccess="false" comments="7">
     <title>Fix CI and upgrade dependencies</title>
+    <link>https://github.com/facebook/create-react-app/pull/6137</link>
     <status>merged</status>
     <merged>2019-01-06 21:13 GMT+3</merged>
-    <author>Timer</author>
+    <author>
+      <name>Timer</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3ATimer
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
       <label>tag: internal</label>
@@ -59,10 +95,16 @@
   </pull>
   <pull id="6132" checksTotal="2" checksPassed="2" checksSuccess="true" comments="8">
     <title>Bump eslint-plugin-react version and update webpack config</title>
+    <link>https://github.com/facebook/create-react-app/pull/6132</link>
     <status>merged</status>
     <merged>2019-01-07 02:05 GMT+3</merged>
     <review>Approved</review>
-    <author>ianschmitz</author>
+    <author>
+      <name>ianschmitz</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3Aianschmitz
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
       <label>tag: underlying tools</label>
@@ -70,10 +112,16 @@
   </pull>
   <pull id="6116" checksTotal="2" checksPassed="2" checksSuccess="true" comments="62">
     <title>Set module resolution based on baseUrl in jsconfig/tsconfig.json</title>
+    <link>https://github.com/facebook/create-react-app/pull/6116</link>
     <status>open</status>
     <created>2019-01-03 18:08 GMT+3</created>
     <review>Changes requested</review>
-    <author>rovansteen</author>
+    <author>
+      <name>rovansteen</name>
+      <link>
+        https://github.com/facebook/create-react-app/issues?q=is%3Apr+author%3Arovansteen
+      </link>
+    </author>
     <labels>
       <label>CLA Signed</label>
       <label>tag: breaking change</label>

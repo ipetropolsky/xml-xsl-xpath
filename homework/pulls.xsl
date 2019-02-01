@@ -133,10 +133,11 @@
   </xsl:template>
 
   <xsl:template match="author">
-    <a class="pr-author"
-       href="{concat('https://github.com/', /pulls/@user, '/', /pulls/@repo,
-                     '/issues?q=is%3Apr+author%3A', .)}">
-      <xsl:value-of select="."/>
+    <a class="pr-author">
+      <xsl:attribute name="href">
+        <xsl:value-of select="link"/>
+      </xsl:attribute>
+      <xsl:value-of select="name"/>
     </a>
   </xsl:template>
 
@@ -149,29 +150,29 @@
     </span>
   </xsl:template>
 
-  <xsl:template match="pull" mode="checks">
+  <xsl:template match="pull[@checksSuccess='true']" mode="checks">
     <span title="{concat(@checksPassed, ' / ', @checksTotal, ' checks OK')}">
-      <xsl:apply-templates select="@checksSuccess"/>
+      <xsl:attribute name="class">
+        <xsl:text>checks checks-success</xsl:text>
+      </xsl:attribute>
+      <xsl:copy-of select="$icon_check"/>
     </span>
   </xsl:template>
 
-  <xsl:template match="@checksSuccess[.='true']">
-    <xsl:attribute name="class">
-      <xsl:text>checks checks-success</xsl:text>
-    </xsl:attribute>
-    <xsl:copy-of select="$icon_check"/>
-  </xsl:template>
-
-  <xsl:template match="@checksSuccess[.='false']">
-    <xsl:attribute name="class">
-      <xsl:text>checks checks-failed</xsl:text>
-    </xsl:attribute>
-    <xsl:copy-of select="$icon_x"/>
+  <xsl:template match="pull[@checksSuccess='false']" mode="checks">
+    <span title="{concat(@checksPassed, ' / ', @checksTotal, ' checks OK')}">
+      <xsl:attribute name="class">
+        <xsl:text>checks checks-failed</xsl:text>
+      </xsl:attribute>
+      <xsl:copy-of select="$icon_x"/>
+    </span>
   </xsl:template>
 
   <xsl:template match="pull" mode="title">
-    <a class="pr-title"
-       href="{concat('https://github.com/', /pulls/@user, '/', /pulls/@repo, '/pull/', @id)}">
+    <a class="pr-title">
+      <xsl:attribute name="href">
+        <xsl:value-of select="link"/>
+      </xsl:attribute>
       <xsl:value-of select="title"/>
     </a>
   </xsl:template>
