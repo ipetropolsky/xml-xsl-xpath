@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pr_list>
+    <pull_requests>
+        <request id="6300">
+        	<status>open</status>
+            <description>remove padding 0 on body from default styles</description>
+            <date>
+            	<day>29</day>
+            	<month>1</month>
+            	<year>2019</year>
+            	<hours>16</hours>
+            	<minutes>28</minutes>
+            	<seconds>30</seconds>
+            	<time_zone>3</time_zone>
+            </date>
+            <author>Hurtak</author>
+            <tags>
+            	<tag>CLA Signed</tag>
+            </tags>
+            <check_flag>NOT_OK</check_flag>
+            <comments_number>2</comments_number>
+        </request>
+        <request id="6295">
+        	<status>open</status>
+            <description>Disable Terser function inlining</description>
+            <date>
+            	<day>25</day>
+            	<month>1</month>
+            	<year>2019</year>
+            	<hours>13</hours>
+            	<minutes>17</minutes>
+            	<seconds>24</seconds>
+            	<time_zone>3</time_zone>
+            </date>
+            <author>Joe1</author>
+            <tags>
+            	<tag>CLA Signed</tag>
+            </tags>
+            <check_flag>NOT_OK</check_flag>
+            <comments_number>3</comments_number>
+        </request>
+        <request id="6294">
+        	<status>open</status>
+            <description>CRA site/docs enhancement</description>
+            <date>
+            	<day>21</day>
+            	<month>1</month>
+            	<year>2019</year>
+            	<hours>8</hours>
+            	<minutes>10</minutes>
+            	<seconds>5</seconds>
+            	<time_zone>2</time_zone>
+            </date>
+            <author> bukharim96</author>
+            <tags>
+            	<tag>CLA Signed</tag>
+            	<tag>bug fix</tag>
+            </tags>
+            <check_flag>OK</check_flag>
+            <comments_number>8</comments_number>
+        </request>
+        <request id="6293">
+        	<status>closed</status>
+            <description>Add Node DNS module to empty mocks</description>
+            <date>
+            	<day>15</day>
+            	<month>12</month>
+            	<year>2018</year>
+            	<hours>21</hours>
+            	<minutes>48</minutes>
+            	<seconds>56</seconds>
+            	<time_zone>5</time_zone>
+            </date>
+            <author>kenwheeler</author>
+            <tags>
+            	<tag>documentation</tag>
+            </tags>
+            <check_flag>OK</check_flag>
+            <comments_number>21</comments_number>
+        </request>
+        <request id="6290">
+        	<status>closed</status>
+            <description>Fix babel preset useESModules option</description>
+            <date>
+            	<day>10</day>
+            	<month>11</month>
+            	<year>2018</year>
+            	<hours>14</hours>
+            	<minutes>21</minutes>
+            	<seconds>33</seconds>
+            	<time_zone>-2</time_zone>
+            </date>
+            <author>dallonf</author>
+            <tags>
+            	<tag>new feature</tag>
+            </tags>
+            <check_flag>OK</check_flag>
+            <comments_number>117</comments_number>
+        </request>
+        
+    </pull_requests>
+</pr_list>
