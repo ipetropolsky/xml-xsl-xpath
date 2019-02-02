@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="./../xsl/pr-list/pull-requests-list.xsl"?>
+<PullRequests>
+    <AdditionalInfo>
+        <OpenedCount>21</OpenedCount>
+        <ClosedCount>325</ClosedCount>
+        <PagesCount>1</PagesCount>
+        <PagesSize>20</PagesSize>
+    </AdditionalInfo>
+    <Elements>
+        <PullRequest Id="1">
+            <Title>Test</Title>
+            <Status>Open</Status>
+            <DateCreate>2019-01-15T15:53:00+05:00</DateCreate>
+            <DateCreateFormatted>13 hours ago</DateCreateFormatted>
+            <CloseDate/>
+            <CloseDateFormatted/>
+            <User>
+                <Name>Author name 1</Name>
+                <Avatar>url://</Avatar>
+            </User>
+            <Comments/>
+            <CI>
+                <ChecksNeed>2</ChecksNeed>
+                <ChecksActual>1</ChecksActual>
+            </CI>
+            <Tags>
+                <Tag>
+                    <Level>Warning</Level>
+                    <Value>Bug fix</Value>
+                </Tag>
+                <Tag>
+                    <Level>Info</Level>
+                    <Value>New feature</Value>
+                </Tag>
+            </Tags>
+        </PullRequest>
+        <PullRequest Id="2">
+            <Title>Test</Title>
+            <Status>Closed</Status>
+            <DateCreate>2019-01-15T15:53:00+05:00</DateCreate>
+            <DateCreateFormatted>100 days ago</DateCreateFormatted>
+            <CloseDate>2019-01-15T15:53:00+05:00</CloseDate>
+            <CloseDateFormatted>13 hours ago</CloseDateFormatted>
+            <User>
+                <Name>Author name</Name>
+                <Avatar>url://</Avatar>
+            </User>
+            <Comments>
+                <Comment>
+                    <User>
+                        <Name>Author name</Name>
+                        <Avatar>url://</Avatar>
+                    </User>
+                    <DateCreate>2019-01-15T15:53:00+05:00</DateCreate>
+                    <DateCreateFormatted>100 days ago</DateCreateFormatted>
+                    <Text>This is awesome!</Text>
+                </Comment>
+            </Comments>
+            <CI>
+                <ChecksNeed>2</ChecksNeed>
+                <ChecksActual>2</ChecksActual>
+            </CI>
+            <Tags/>
+        </PullRequest>
+    </Elements>
+</PullRequests>
