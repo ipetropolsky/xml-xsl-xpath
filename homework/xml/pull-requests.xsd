@@ -28,10 +28,10 @@
     <xs:complexType name="PullRequests">
         <xs:sequence>
             <xs:element type="xs:string" name="Title"/>
-            <xs:element type="xs:string" name="Status"/>
+            <xs:element type="PullRequestStatus" name="Status"/>
             <xs:element type="xs:dateTime" name="DateCreate"/>
             <xs:element type="xs:string" name="DateCreateFormatted"/>
-            <xs:element type="xs:string" name="CloseDate" minOccurs="0"/>
+            <xs:element type="xs:dateTime" name="CloseDate" minOccurs="0"/>
             <xs:element type="xs:string" name="CloseDateFormatted" minOccurs="0"/>
             <xs:element name="User" type="User"/>
             <xs:element name="Comments">
@@ -42,8 +42,7 @@
                                 <xs:sequence>
                                     <xs:element name="User" type="User"/>
                                     <xs:element type="xs:dateTime" name="DateCreate"/>
-                                    <xs:element type="xs:string"
-                                                name="DateCreateFormatted"/>
+                                    <xs:element type="xs:string" name="DateCreateFormatted"/>
                                     <xs:element type="xs:string" name="Text"/>
                                 </xs:sequence>
                             </xs:complexType>
@@ -76,6 +75,14 @@
         </xs:sequence>
         <xs:attribute type="xs:byte" name="Id"/>
     </xs:complexType>
+
+    <xs:simpleType name="PullRequestStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Open"/>
+            <xs:enumeration value="Closed"/>
+            <xs:enumeration value="Merged"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:complexType name="User">
         <xs:sequence>
