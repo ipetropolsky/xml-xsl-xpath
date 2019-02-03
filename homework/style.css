@@ -1,0 +1,118 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+a {
+    color: #586069;
+}
+
+a:hover {
+    color: #0366d6;
+}
+
+.pull-request-list {
+    width: 980px;
+    fill: currentColor;
+}
+
+.pull-request-list__header {
+    display: flex;
+    padding: 13px 16px;
+    border: 1px solid #e1e4e8;
+    color: #586069;
+}
+
+.pull-request-list__header-item {
+}
+
+.pull-request-list__item {
+    padding: 3px;
+}
+
+.pull-request-list__row {
+    display: flex;
+    border: 1px solid #e1e4e8;
+    margin-top: -1px;
+}
+
+.pull-request-list__row-content {
+    flex-grow: 2;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.pull-request-list__row-closed-icon {
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.octicon.open {
+    color: #28a745;
+}
+
+.octicon.close {
+    color: #cb2431;
+}
+
+.octicon.octicon-check-ok {
+    color: #28a745 !important;
+}
+
+.octicon.octicon-check-not-ok {
+    color: #cb2431 !important;
+}
+
+.pull-request-list__row-tag {
+    border-radius: 2px;
+    box-shadow: inset 0 -1px 0 rgba(27, 31, 35, .12);
+    font-size: 12px;
+    font-weight: 600;
+    height: 20px;
+    line-height: 15px;
+    padding: .15em 4px;
+    margin: 0 3px;
+}
+
+.pull-request-list__row-tag.sla-signed {
+    background-color: #009900;
+    color: #000000;
+}
+
+.pull-request-list__row-tag.info {
+    background-color: #bfdadc;
+    color: #000000;
+}
+
+.pull-request-list__row-tag.warning {
+    background-color: #fbca04;
+    color: #000000;
+}
+
+.pull-request-list__row-tag.danger {
+    background-color: #e11d21;
+    color: #ffffff;
+}
+
+.pull-request-list__row-tag.info {
+    background-color: #bfdadc;
+    color: #000000;
+}
+
+.pull-request-list__row-additional-info {
+    line-height: 1.25;
+    font-size: 12px;
+    color: #586069;
+    margin: 4px 0;
+}
+
+.pull-request-list__row-comment {
+    padding: 8px 16px;
+    white-space: nowrap;
+    color: #28a745;
+}
