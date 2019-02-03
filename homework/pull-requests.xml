@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="/pull-requests.xsl"?>
 <issues>
+    <issue id="6969">
+        <title>
+            <text>My clickable pull request</text>
+            <url>/pull-request-6969.xml</url>
+        </title>
+        <status open="true">
+            <opened>1 days ago</opened>
+            <closed></closed>
+            <author>
+                <name>myself</name>
+                <url>https://github.com/facebook/create-react-app/issues?q=is%3Apr+is%3Aopen+author%3Amyself</url>
+            </author>
+        </status>
+        <checks passed="true">Checks OK</checks>
+        <labels>
+            <label background="#990000" color="#ffffff">My Clickable Issue</label>
+        </labels>
+        <comments>
+            <total>3</total>
+            <url>/pull-request-6969.xml</url>
+        </comments>
+    </issue>
     <issue id="6331">
         <title>
             <text>Update docs to document `--no-watch`</text>

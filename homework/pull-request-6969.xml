@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/pull-request.xsl"?>
+<issue>
+    <title>
+        My clickable pull request
+    </title>
+    <comments>
+        <comment>
+            <created>1 day ago</created>
+            <author>
+                <name>Myself</name>
+                <icon>https://bulma.io/images/placeholders/128x128.png</icon>
+            </author>
+            <text>My great pull request</text>
+        </comment>
+        <comment>
+            <created>1 day ago</created>
+            <author>
+                <name>Someone</name>
+                <icon>https://bulma.io/images/placeholders/128x128.png</icon>
+            </author>
+            <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</text>
+        </comment>
+        <comment>
+            <created>1 day ago</created>
+            <author>
+                <name>Someone</name>
+                <icon>https://bulma.io/images/placeholders/128x128.png</icon>
+            </author>
+            <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</text>
+        </comment>
+        <comment>
+            <created>1 day ago</created>
+            <author>
+                <name>Someone</name>
+                <icon>https://bulma.io/images/placeholders/128x128.png</icon>
+            </author>
+            <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</text>
+        </comment>
+    </comments>
+</issue>
