@@ -1,0 +1,122 @@
+/* Modal */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px;
+  font-family: sans-serif;
+}
+
+.page-header{
+  align-self: center;
+  margin: 20px
+}
+
+.statistics-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #cccccc;
+}
+
+.statistics-item {
+  margin: 10px;
+}
+
+.list-wrapper{
+  width: 100%;
+}
+
+.item-wrapper{  
+  display: flex;
+  flex-direction: row;
+  border: thin solid #ccc;
+  margin-top: -1px;
+  height: 45px;
+}
+
+.pr-icon{
+  width: 25px;
+  margin: 2px 10px 20px 4px;
+  padding: 3px;
+  background-size: cover;
+}
+
+.pr-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0;
+  width: 100%;
+}
+
+.pr-top, .tag-wrapper{
+  display: inline-flex;
+}
+
+.pr-header{
+  font-weight: bold;
+}
+
+.label{
+  margin: 2px 2px 0 2px;
+  padding: 1px 3px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  height: 16px;
+}
+
+.label-CLA-signed{
+  background-color: green;
+  color: white; 
+}
+
+.label-bug-fix{
+  background-color: yellow;
+}
+
+.label-issue-proposal{
+  background-color: blue;
+  color: white; 
+}
+
+.pr-description-wrapper{
+  display: inline-flex;
+  margin: 3px 0;
+}
+
+.pr-description, .tag{
+  margin: 3px 0;
+  font-size: 12px;
+  color: #6c6c6c;
+}
+
+.tag-icon{
+  margin: 0 2px 0 4px;
+}
+
+.pr-comments-wrapper{
+  display: inline-flex;
+  font-size: 16px;
+  color: #5c5c5c;
+}
+
+.pr-comments-icon{
+  margin: 5px 2px 0 0;
+}
+
+.pr-comments-quantity{
+  padding: 2px;
+  margin: 0 2px;
+}
