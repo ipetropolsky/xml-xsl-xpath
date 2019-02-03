@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/pull-requests.xsl"?>
+<issues>
+    <issue id="6331">
+        <title>
+            <text>Update docs to document `--no-watch`</text>
+            <url>https://github.com/facebook/create-react-app/pull/6331</url>
+        </title>
+        <status open="true">
+            <opened>2 days ago</opened>
+            <closed></closed>
+            <author>
+                <name>ricokahler</name>
+                <url>https://github.com/facebook/create-react-app/issues?q=is%3Apr+is%3Aopen+author%3Aricokahler</url>
+            </author>
+        </status>
+        <checks passed="false">1/2 checks OK</checks>
+        <labels>
+            <label background="#009900" color="#000000">CLA Signed</label>
+        </labels>
+        <comments>
+            <total>9</total>
+            <url>https://github.com/facebook/create-react-app/pull/6331</url>
+        </comments>
+    </issue>
+    <issue id="6313">
+        <title>
+            <text>Update testMatch to also be compatible with Jest 24</text>
+            <url>https://github.com/facebook/create-react-app/pull/6313</url>
+        </title>
+        <status open="true">
+            <opened>3 days ago</opened>
+            <closed></closed>
+            <author>
+                <name>ngbrown</name>
+                <url>https://github.com/facebook/create-react-app/issues?q=is%3Apr+is%3Aopen+author%3Angbrown</url>
+            </author>
+        </status>
+        <checks passed="true">Success: Docs deploy preview succeeded</checks>
+        <labels>
+            <label background="#009900" color="#000000">CLA Signed</label>
+            <label background="#bfdadc" color="#000000">tag: internal</label>
+        </labels>
+        <comments>
+            <total>6</total>
+            <url>https://github.com/facebook/create-react-app/pull/6313</url>
+        </comments>
+    </issue>
+        <issue id="6311">
+        <title>
+            <text>huynhkha</text>
+            <url>https://github.com/facebook/create-react-app/pull/6311</url>
+        </title>
+        <status open="false">
+            <opened>5 days ago</opened>
+            <closed>4 days ago</closed>
+            <author>
+                <name>htk159131721</name>
+                <url>https://github.com/facebook/create-react-app/issues?q=is%3Apr+is%3Aopen+author%3Ahtk159131721</url>
+            </author>
+        </status>
+        <checks passed="false">0/2 checks OK</checks>
+        <labels/>
+    </issue>
+</issues>
