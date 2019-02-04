@@ -7,8 +7,9 @@
                  status="open">
         <title>test PR</title>
         <author>
-            <userName>author PR</userName>
-            <avatar>ava</avatar>
+            <userName>author3</userName>
+            <displayName>Denis</displayName>
+            <avatar>https://smth.else/img/anonymous.png</avatar>
         </author>
         <labels>
             <label>
@@ -23,15 +24,17 @@
         <comments>
             <comment datetime="2018-01-01T03:50:21.342323Z">
                 <author>
-                    <userName>Andrey</userName>
-                    <avatar>ava2</avatar>
+                    <userName>author4</userName>
+                    <displayName>Andrey</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <text>Look good to me</text>
             </comment>
             <comment datetime="2018-01-01T04:00:02.424123Z">
                 <author>
-                    <userName>Denis</userName>
-                    <avatar>ava3</avatar>
+                    <userName>author3</userName>
+                    <displayName>Denis</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <text>All ok</text>
             </comment>
@@ -43,7 +46,8 @@
         <repository>
             <author>
                 <userName>facebook</userName>
-                <avatar>ava</avatar>
+                <displayName>facebook</displayName>
+                <avatar>https://smth.else/img/facebook.png</avatar>
             </author>
             <name>create-react-app</name>
         </repository>

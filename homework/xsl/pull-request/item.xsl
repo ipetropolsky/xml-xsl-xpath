@@ -7,7 +7,11 @@
     <xsl:template match="pullRequest">
         <div class="pull-request">
             <div class="pull-request__repository">
-                <h2><a href="../list.xml"><xsl:apply-templates select="repository"/></a></h2>
+                <h2>
+                    <a href="../list.xml">
+                        <xsl:apply-templates select="repository" mode="repository-name"/>
+                    </a>
+                </h2>
             </div>
             <div class="row">
                 <div class="col">
@@ -27,7 +31,7 @@
                             <xsl:call-template name="formatdatetime">
                                 <xsl:with-param name="datetime" select="@datetime"/>
                             </xsl:call-template>
-                            by <xsl:value-of select="author/userName"/>
+                            by <xsl:apply-templates select="author"/>
                         </span>
                     </div>
                 </div>
@@ -41,7 +45,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#comments" data-toggle="tab">
-                        <i class="far fa-comment-alt"></i>
+                        <i class="far fa-comment-alt"/>
                         comments
                         <xsl:value-of select="count(comments/comment)"/>
                     </a>
@@ -61,6 +65,12 @@
                 </div>
             </div>
         </div>
+    </xsl:template>
+
+    <xsl:template match="author">
+        <a href="/user/{userName}">
+            <xsl:value-of select="displayName"/>
+        </a>
     </xsl:template>
 
 </xsl:stylesheet>

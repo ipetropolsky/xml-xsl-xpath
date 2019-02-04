@@ -7,13 +7,13 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#open" id="open-tab" data-toggle="tab">
                     <!-- code-merge requires font awesome pro -->
-                    <i class="fas fa-code-branch"></i>
+                    <i class="fas fa-code-branch"/>
                     <xsl:value-of select="count(pullRequest[@checks = 'ok'])"/> opened
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#close" id="close-tab" data-toggle="tab">
-                    <i class="fas fa-check"></i>
+                    <i class="fas fa-check"/>
                     <xsl:value-of select="count(pullRequest[@checks = 'reject'])"/> closed
                 </a>
             </li>

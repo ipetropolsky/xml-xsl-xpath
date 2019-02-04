@@ -4,7 +4,8 @@
     <repository>
         <author>
             <userName>facebook</userName>
-            <avatar>ava</avatar>
+            <displayName>facebook</displayName>
+            <avatar>https://smth.else/img/facebook.png</avatar>
         </author>
         <name>create-react-app</name>
 
@@ -16,8 +17,9 @@
                          commentsCount="2">
                 <title>test PR</title>
                 <author>
-                    <userName>author PR</userName>
-                    <avatar>ava</avatar>
+                    <userName>author1</userName>
+                    <displayName>author PR</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <labels>
                     <label>
@@ -38,16 +40,15 @@
                          commentsCount="3">
                 <title>test PR2</title>
                 <author>
-                    <userName>author PR</userName>
-                    <avatar>ava</avatar>
+                    <userName>author2</userName>
+                    <displayName>author PR</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <labels>
-                    <labels>
-                        <label>
-                            <title>lbl1</title>
-                            <type>danger</type>
-                        </label>
-                    </labels>
+                    <label>
+                        <title>lbl1</title>
+                        <type>danger</type>
+                    </label>
                 </labels>
             </pullRequest>
         </pullRequests>

@@ -4,7 +4,7 @@
     <xsl:template match="comment">
         <div class="comment">
             <div class="comment__title">
-                <xsl:value-of select="author/userName"/>
+                <xsl:apply-templates select="author"/>
                 commented
                 <xsl:call-template name="formatdatetime">
                     <xsl:with-param name="datetime" select="@datetime"/>
@@ -14,6 +14,12 @@
                 <xsl:value-of select="text"/>
             </div>
         </div>
+    </xsl:template>
+
+    <xsl:template match="author">
+        <a href="/user/{userName}">
+            <xsl:value-of select="displayName"/>
+        </a>
     </xsl:template>
 
 </xsl:stylesheet>

@@ -10,8 +10,7 @@
                         <xsl:value-of select="title"/>
                     </a>
                     <span class="pull-request-list__checks">
-                        <xsl:if test="@checks = 'ok'"><i class="fas fa-check"></i></xsl:if>
-                        <xsl:if test="@checks = 'reject'"><i class="fas fa-times"></i></xsl:if>
+                        <xsl:apply-templates select="." mode="checks"/>
                     </span>
                     <span class="pull-request-list__labels">
                         <xsl:apply-templates select="labels"/>
@@ -24,17 +23,30 @@
                         <xsl:call-template name="formatdatetime">
                             <xsl:with-param name="datetime" select="@datetime"/>
                         </xsl:call-template>
-                        by <xsl:value-of select="author/userName"/>
+                        by <xsl:apply-templates select="author"/>
                     </span>
                 </div>
             </div>
 
             <div class="col-2 text-right">
                 <span class="pull-request-list__comments">
-                    <i class="far fa-comment-alt"></i> <xsl:value-of select="@commentsCount"/>
+                    <i class="far fa-comment-alt"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="@commentsCount"/>
                 </span>
             </div>
         </div>
+    </xsl:template>
+
+    <xsl:template match="author">
+        <a href="/user/{userName}">
+            <xsl:value-of select="displayName"/>
+        </a>
+    </xsl:template>
+
+    <xsl:template match="pullRequest" mode="checks">
+        <xsl:if test="@checks = 'ok'"><i class="fas fa-check"/></xsl:if>
+        <xsl:if test="@checks = 'reject'"><i class="fas fa-times"/></xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>

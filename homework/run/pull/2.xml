@@ -7,8 +7,9 @@
                  status="merged">
         <title>test PR2</title>
         <author>
-            <userName>Wallie</userName>
-            <avatar>ava</avatar>
+            <userName>author5</userName>
+            <displayName>Wallie</displayName>
+            <avatar>https://smth.else/img/anonymous.png</avatar>
         </author>
         <labels>
             <label>
@@ -19,22 +20,25 @@
         <comments>
             <comment datetime="2018-01-02T04:50:21.342323Z">
                 <author>
-                    <userName>Andrey</userName>
-                    <avatar>ava2</avatar>
+                    <userName>author4</userName>
+                    <displayName>Andrey</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <text>WTF</text>
             </comment>
             <comment datetime="2018-01-03T04:20:02.424123Z">
                 <author>
-                    <userName>Denis</userName>
-                    <avatar>ava3</avatar>
+                    <userName>author3</userName>
+                    <displayName>Denis</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <text>Bad PR</text>
             </comment>
             <comment datetime="2018-01-03T04:21:03.4761431">
                 <author>
-                    <userName>Wallie</userName>
-                    <avatar>ava</avatar>
+                    <userName>author5</userName>
+                    <displayName>Wallie</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
                 </author>
                 <text>:(</text>
             </comment>
@@ -46,7 +50,8 @@
         <repository>
             <author>
                 <userName>facebook</userName>
-                <avatar>ava</avatar>
+                <displayName>facebook</displayName>
+                <avatar>https://smth.else/img/facebook.png</avatar>
             </author>
             <name>create-react-app</name>
         </repository>
