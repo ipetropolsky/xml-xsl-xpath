@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="./transform.xsl" ?>
+<doc title="Pull Request #1">
+    <pullRequest id="2"
+                 datetime="2018-01-01T03:29:54.453105Z"
+                 checks="reject"
+                 status="merged">
+        <title>test PR2</title>
+        <author>
+            <userName>author5</userName>
+            <displayName>Wallie</displayName>
+            <avatar>https://smth.else/img/anonymous.png</avatar>
+        </author>
+        <labels>
+            <label>
+                <title>lbl1</title>
+                <type>danger</type>
+            </label>
+        </labels>
+        <comments>
+            <comment datetime="2018-01-02T04:50:21.342323Z">
+                <author>
+                    <userName>author4</userName>
+                    <displayName>Andrey</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
+                </author>
+                <text>WTF</text>
+            </comment>
+            <comment datetime="2018-01-03T04:20:02.424123Z">
+                <author>
+                    <userName>author3</userName>
+                    <displayName>Denis</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
+                </author>
+                <text>Bad PR</text>
+            </comment>
+            <comment datetime="2018-01-03T04:21:03.4761431">
+                <author>
+                    <userName>author5</userName>
+                    <displayName>Wallie</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
+                </author>
+                <text>:(</text>
+            </comment>
+        </comments>
+        <text>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eligendi facere nobis sapiente ullam.
+            Ad aut commodi cumque eos facere, molestiae molestias nam odio quibusdam quod repudiandae temporibus ut vitae.
+        </text>
+        <repository>
+            <author>
+                <userName>facebook</userName>
+                <displayName>facebook</displayName>
+                <avatar>https://smth.else/img/facebook.png</avatar>
+            </author>
+            <name>create-react-app</name>
+        </repository>
+    </pullRequest>
+</doc>

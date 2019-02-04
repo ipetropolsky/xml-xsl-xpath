@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="./transform.xsl" ?>
+<doc title="Pull Requests">
+    <repository>
+        <author>
+            <userName>facebook</userName>
+            <displayName>facebook</displayName>
+            <avatar>https://smth.else/img/facebook.png</avatar>
+        </author>
+        <name>create-react-app</name>
+
+        <pullRequests>
+            <pullRequest id="1"
+                         datetime="2018-01-01T03:27:49.453105Z"
+                         checks="ok"
+                         status="open"
+                         commentsCount="2">
+                <title>test PR</title>
+                <author>
+                    <userName>author1</userName>
+                    <displayName>author PR</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
+                </author>
+                <labels>
+                    <label>
+                        <title>lbl1</title>
+                        <type>danger</type>
+                    </label>
+                    <label>
+                        <title>lbl2</title>
+                        <type>success</type>
+                    </label>
+                </labels>
+            </pullRequest>
+
+            <pullRequest id="2"
+                         datetime="2018-01-01T03:29:54.453105Z"
+                         checks="reject"
+                         status="merged"
+                         commentsCount="3">
+                <title>test PR2</title>
+                <author>
+                    <userName>author2</userName>
+                    <displayName>author PR</displayName>
+                    <avatar>https://smth.else/img/anonymous.png</avatar>
+                </author>
+                <labels>
+                    <label>
+                        <title>lbl1</title>
+                        <type>danger</type>
+                    </label>
+                </labels>
+            </pullRequest>
+        </pullRequests>
+    </repository>
+</doc>
