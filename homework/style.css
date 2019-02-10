@@ -1,0 +1,155 @@
+/* Rools*/
+* {
+	font-family: Helvetica;
+	box-sizing: border-box;
+}
+
+/* Modal */
+
+.modal-wrapper {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.modal {
+	width: 100%;
+}
+
+/* HeadLine */
+
+.headline {
+	background-color: #eaeaea;
+	border: 1px solid #ddd;
+	height: 47px;
+	padding: 12px 17px;
+}
+
+.headline__number_of_closed {
+	margin-left: 15px;
+}
+
+/* Pull Requests Rows */
+
+.row-content {
+	margin-left: 7px;
+}
+
+.pull-request__row-wrapper {
+	background-color: #f1f1f1;
+	border: 1px solid #eee;
+	height: 60px;
+	padding: 8px 17px;
+}
+
+.pull-request__row {
+	display: -webkit-flex;
+	display: flex;
+
+}
+
+.pull-request__content {
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+
+.pull-request__content div:last-child {
+  margin-left: auto;
+}
+
+.pull-request-content__info {
+	font-weight: bold;
+}
+
+
+
+
+/* Colors */
+
+.opened {
+	background-color: #fefefe; 
+}
+
+.closed {
+	background-color: #f09090; 
+}
+
+.merged {
+	background-color: #ee82ee; 
+}
+
+.pr_icon_open {
+	fill: #28a745;
+}
+
+.pr_icon_close {
+	fill: #cb2431;
+}
+
+.pr_icon_merge {
+	fill: #6f42c1;
+}
+
+.pull-request__content__labels span {
+	background-color: #1E90FF; 
+	color: #000000;
+}
+
+.pull-request__content__labels span[type-label="CLA Signed"] {
+	background-color: #009900; 
+	color: #000000;
+}
+
+.pull-request__content__labels span[type-label="tag: documentation"] {
+	background-color: #006b75; 
+	color: #ffffff;
+}
+
+.pull-request__content__labels span[type-label="tag: breaking change"] {
+	background-color: #e11d21; 
+	color: #ffffff;
+
+}
+
+.pull-request__content__labels span[type-label="tag: new feature"] {
+	background-color: #0e8a16; 
+	color: #ffffff;
+}
+
+.pull-request__content__labels span[type-label="tag: underlying tools"] {
+	background-color: #d93f0b; 
+	color: #ffffff;
+}
+
+
+/* Format */
+
+a {
+	text-decoration: none;
+	color: #191970;
+}
+
+@media (max-width: 768px) {
+	.modal {
+		margin: 20px 5px;
+		min-width: 768px;
+	}
+
+}
+
+@media (max-width: 1120px) {
+	.modal {
+		margin: 20px 20px;
+	}
+	.pull-request__row-wrapper {
+		height: 73px;
+		padding: 8px 30px;
+	}
+}
+
+@media (min-width: 1120px) {
+	.modal {
+		margin: 20px 70px;
+		max-width: 1120px;
+	}
+}
