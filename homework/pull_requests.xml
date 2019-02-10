@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pullRequestsList>
+    <pullRequest>
+        <status>opened</status>
+        <id>6286</id>
+        <state>open</state>
+        <info>Fix error messages for child compilations</info>
+        <date>07.02.2019, 17:11 GMT+3</date>
+        <author>jamesknelson</author>
+        <messages>0</messages>
+        <labels>
+            <label>CLA Signed</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <id>6353</id>
+        <state>open</state>
+        <info>update bash commands for HTTPS use in local env</info>
+        <date>07.02.2019, 09:50 GMT+3</date>
+        <author>cconcannon</author>
+        <messages>2</messages>
+        <labels>
+            <label>CLA Signed</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>closed</status>
+        <id>6359</id>
+        <state>merge</state>
+        <info>Update ZEIT Now deployment instructions</info>
+        <date>11.01.2019, 19:53 GMT+3</date>
+        <author>timothyis</author>
+        <messages>3</messages>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: documentation</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>closed</status>
+        <id>6348</id>
+        <state>close</state>
+        <info>Add `box-sizing: border-box` to all elements by default</info>
+        <date>07.02.2019, 14:11 GMT+3</date>
+        <author>jordanoverbye</author>
+        <messages>4</messages>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: breaking change</label>
+            <label>tag: new feature</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <id>6386</id>
+        <state>open</state>
+        <info>[docs] revert removal of newlines from html</info>
+        <date>10.02.2019, 04:52 GMT+3</date>
+        <author>JBallin</author>
+        <messages>3</messages>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: documentation</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>closed</status>
+        <id>6307</id>
+        <state>merge</state>
+        <info>Update babel-plugin-macros 2.4.4 -&gt; 2.4.5</info>
+        <date>09.02.2019, 11:39 GMT+3</date>
+        <author>maniax89</author>
+        <messages>5</messages>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: underlying tools</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <id>6387</id>
+        <state>open</state>
+        <info>Use contenthash instead of chunkhash for better long-term caching</info>
+        <date>10.02.2019, 02:52 GMT+3</date>
+        <author>ianschmitz</author>
+        <messages>0</messages>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: underlying tools</label>
+        </labels>
+    </pullRequest>
+    <pullRequest>
+        <status>opened</status>
+        <id>6367</id>
+        <state>open</state>
+        <info>Upgrade css-loader to 2.1.0</info>
+        <date>08.02.2019, 20:17 GMT+3</date>
+        <author>gnuletik</author>
+        <messages>3</messages>
+        <labels>
+            <label>CLA Signed</label>
+            <label>tag: breaking change</label>
+        </labels>
+    </pullRequest>
+</pullRequestsList>
