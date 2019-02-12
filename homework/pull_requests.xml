@@ -10,7 +10,10 @@
         </opener>
         <createdAt>2019-02-11T12:00:00Z</createdAt>
         <closedAt>2019-02-11T12:00:00Z</closedAt>
-        <checkPass>false</checkPass>
+        <checkPass>
+            <passed>true</passed>
+            <details>ok 2/2</details>
+        </checkPass>
         <labels>
             <label color="is-success">CLA Signed</label>
         </labels>
@@ -25,7 +28,10 @@
         </opener>
         <createdAt>2019-02-12T11:00:00Z</createdAt>
         <mergedAt>2019-02-12T11:00:00Z</mergedAt>
-        <checkPass>true</checkPass>
+        <checkPass>
+            <passed>false</passed>
+            <details>not completely - 1/2</details>
+        </checkPass>
         <labels>
             <label color="is-danger">tag: breaking change</label>
         </labels>
@@ -39,7 +45,10 @@
             <openerUrl>https://github.com/cool_man</openerUrl>
         </opener>
         <createdAt>2019-01-20T12:00:00Z</createdAt>
-        <checkPass>true</checkPass>
+        <checkPass>
+            <passed>true</passed>
+            <details>ok - 1/1</details>
+        </checkPass>
         <labels>
             <label color="is-success">CLA Signed</label>
             <label color="is-dark">tag: new feature</label>
@@ -54,7 +63,10 @@
             <openerUrl>https://github.com/cool_man</openerUrl>
         </opener>
         <createdAt>2019-01-31T12:00:00Z</createdAt>
-        <checkPass>false</checkPass>
+        <checkPass>
+            <passed>false</passed>
+            <details>1/3</details>
+        </checkPass>
         <labels>
             <label color="is-info">tag: bug fix</label>
             <label color="is-danger">tag: breaking change</label>
@@ -70,7 +82,6 @@
         </opener>
         <createdAt>2019-01-20T12:00:00Z</createdAt>
         <mergedAt>2019-01-20T12:00:00Z</mergedAt>
-        <checkPass>true</checkPass>
         <comments>150</comments>
     </pullRequest>
 </pullRequests>

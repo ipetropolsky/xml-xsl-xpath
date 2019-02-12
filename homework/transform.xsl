@@ -95,14 +95,21 @@
 
     <xsl:template match="checkPass">
         <span>
-        <xsl:if test="text()='true'">
-            <i class="fa fa-check"></i>
-        </xsl:if>
-        <xsl:if test="text()='false'">
-            <i class="fa fa-close"></i>
-        </xsl:if>
+            <xsl:attribute name="title">
+                <xsl:value-of select="details"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="passed[text()='true']"/>
+            <xsl:apply-templates select="passed[text()='false']"/>
         </span>
         <xsl:text> </xsl:text>
+    </xsl:template>
+
+    <xsl:template match="passed[text()='true']">
+        <i class="fa fa-check"></i>
+    </xsl:template>
+
+    <xsl:template match="passed[text()='false']">
+        <i class="fa fa-close"></i>
     </xsl:template>
 
     <xsl:template match="labels" mode="pull_header">
