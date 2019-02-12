@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<pullRequests>
+    <pullRequest id="6219">
+        <title>Adds Babel plugin babel-plugin-optimize-react</title>
+        <url>pull6219.xml</url>
+        <opener>
+            <openerName>trueadm</openerName>
+            <openerUrl>https://github.com/trueadm</openerUrl>
+        </opener>
+        <createdAt>2019-02-11T12:00:00Z</createdAt>
+        <closedAt>2019-02-11T12:00:00Z</closedAt>
+        <checkPass>
+            <passed>true</passed>
+            <details>ok 2/2</details>
+        </checkPass>
+        <labels>
+            <label color="is-success">CLA Signed</label>
+        </labels>
+        <comments>10</comments>
+    </pullRequest>
+    <pullRequest id="6220">
+        <title>Added WRITE_TO_DISK environment variable. Fixes #1070</title>
+        <url>pull6220.xml</url>
+        <opener>
+            <openerName>someProg</openerName>
+            <openerUrl>https://github.com/some_prog</openerUrl>
+        </opener>
+        <createdAt>2019-02-12T11:00:00Z</createdAt>
+        <mergedAt>2019-02-12T11:00:00Z</mergedAt>
+        <checkPass>
+            <passed>false</passed>
+            <details>not completely - 1/2</details>
+        </checkPass>
+        <labels>
+            <label color="is-danger">tag: breaking change</label>
+        </labels>
+        <comments>5</comments>
+    </pullRequest>
+    <pullRequest id="6230">
+        <title>removes use of clearConsole() in some instances</title>
+        <url>pull6230.xml</url>
+        <opener>
+            <openerName>cool_man</openerName>
+            <openerUrl>https://github.com/cool_man</openerUrl>
+        </opener>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <checkPass>
+            <passed>true</passed>
+            <details>ok - 1/1</details>
+        </checkPass>
+        <labels>
+            <label color="is-success">CLA Signed</label>
+            <label color="is-dark">tag: new feature</label>
+        </labels>
+        <comments>0</comments>
+    </pullRequest>
+    <pullRequest id="6281">
+        <title>Adds Babel plugin babel-plugin-optimize-react</title>
+        <url>pull6281.xml</url>
+        <opener>
+            <openerName>visnup</openerName>
+            <openerUrl>https://github.com/cool_man</openerUrl>
+        </opener>
+        <createdAt>2019-01-31T12:00:00Z</createdAt>
+        <checkPass>
+            <passed>false</passed>
+            <details>1/3</details>
+        </checkPass>
+        <labels>
+            <label color="is-info">tag: bug fix</label>
+            <label color="is-danger">tag: breaking change</label>
+        </labels>
+        <comments>150</comments>
+    </pullRequest>
+    <pullRequest id="6245">
+        <title>Relax aria-role  linting for developer-created components</title>
+        <url>pull6245.xml</url>
+        <opener>
+            <openerName>babay</openerName>
+            <openerUrl>https://github.com/babay</openerUrl>
+        </opener>
+        <createdAt>2019-01-20T12:00:00Z</createdAt>
+        <mergedAt>2019-01-20T12:00:00Z</mergedAt>
+        <comments>150</comments>
+    </pullRequest>
+</pullRequests>

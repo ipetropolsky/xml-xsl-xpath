@@ -66,3 +66,5 @@ https://github.com/facebook/create-react-app/pulls
 
 Чтобы было не скучно, возьмите какой-нибудь https://bulma.io или другой CSS-фреймворк
 (по желанию, суть задания не в этом). 
+
+https://github.com/vitalib/xml-xsl-xpath

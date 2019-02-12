@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="transformSingle.xsl"?>
+<pullRequest id="6230">
+    <title>removes use of clearConsole() in some instances</title>
+    <url>https://github.com/facebook/create-react-app/pull/6219</url>
+    <opener>
+        <openerName>cool_man</openerName>
+        <openerUrl>https://github.com/cool_man</openerUrl>
+    </opener>
+    <createdAt>2019-01-20T12:00:00Z</createdAt>
+    <checkPass>true</checkPass>
+    <labels>
+        <label>CLA Signed</label>
+        <label>tag: new feature</label>
+    </labels>
+    <comments>0</comments>
+    <body>Added instructions on how to deploy a CRA app with AWS Amplify</body>
+</pullRequest>

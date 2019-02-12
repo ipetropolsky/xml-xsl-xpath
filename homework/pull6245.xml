@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="transformSingle.xsl"?>
+<pullRequest id="6245">
+    <title>Relax aria-role  linting for developer-created components</title>
+    <url>https://github.com/facebook/create-react-app/pull/6219</url>
+    <opener>
+        <openerName>babay</openerName>
+        <openerUrl>https://github.com/babay</openerUrl>
+    </opener>
+    <createdAt>2019-01-20T12:00:00Z</createdAt>
+    <mergedAt>2019-01-20T12:00:00Z</mergedAt>
+    <closedAt></closedAt>
+    <checkPass></checkPass>
+    <labels>
+    </labels>
+    <comments>150</comments>
+    <body>eram amet quae legam dolore dolor anim cillum aliqua aute amet culpa veniam
+        irure export duis summis tamen nulla amet nulla quis velit dolor aute summis
+        minim fugiat aliqua sunt eram quem quem noster aute anim malis malis nulla velit
+        veniam summis velit velit malis culpa export legam enim culpa eram magna legam
+        quid enim nulla magna culpa nulla malis tempor magna legam illum tempor sunt
+        malis illum malis eram quem tempor noster labore esse noster summis noster
+        tempor quid duis multos duis magna enim illum elit nulla multos multos minim
+        quem aliqua amet noster malis anim sint fugiat aliqua
+    </body>
+</pullRequest>
