@@ -21,7 +21,13 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <xsl:value-of select="concat('. ', title)"/>
             </h1>
             <h2 class="subtitle">
-                Opener: <xsl:value-of select="openerName"/>
+                <xsl:text>Opener: </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="opener/openerUrl"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="opener/openerName"/>
+                </a>
             </h2>
             <div class="block">
                 <div class="notification is-info">

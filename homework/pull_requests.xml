@@ -4,9 +4,11 @@
     <pullRequest id="6219">
         <title>Adds Babel plugin babel-plugin-optimize-react</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
-        <openerName>trueadm</openerName>
+        <opener>
+            <openerName>trueadm</openerName>
+            <openerUrl>https://github.com/trueadm</openerUrl>
+        </opener>
         <createdAt>2019-01-20T12:00:00Z</createdAt>
-        <mergedAt></mergedAt>
         <closedAt>2019-01-20T12:00:00Z</closedAt>
         <checkPass>false</checkPass>
         <labels>
@@ -17,10 +19,12 @@
     <pullRequest id="6220">
         <title>Added WRITE_TO_DISK environment variable. Fixes #1070</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
-        <openerName>someProg</openerName>
-        <createdAt>2019-01-20T12:00:00Z</createdAt>
-        <mergedAt>2019-01-20T12:00:00Z</mergedAt>
-        <closedAt></closedAt>
+        <opener>
+            <openerName>someProg</openerName>
+            <openerUrl>https://github.com/some_prog</openerUrl>
+        </opener>
+        <createdAt>2019-02-12T11:00:00Z</createdAt>
+        <mergedAt>2019-02-12T11:00:00Z</mergedAt>
         <checkPass>true</checkPass>
         <labels>
             <label>tag: breaking change</label>
@@ -30,10 +34,11 @@
     <pullRequest id="6230">
         <title>removes use of clearConsole() in some instances</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
-        <openerName>trueadm</openerName>
+        <opener>
+            <openerName>cool_man</openerName>
+            <openerUrl>https://github.com/cool_man</openerUrl>
+        </opener>
         <createdAt>2019-01-20T12:00:00Z</createdAt>
-        <mergedAt></mergedAt>
-        <closedAt></closedAt>
         <checkPass>true</checkPass>
         <labels>
             <label>CLA Signed</label>
@@ -44,10 +49,11 @@
     <pullRequest id="6281">
         <title>Adds Babel plugin babel-plugin-optimize-react</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
-        <openerName>visnup</openerName>
-        <createdAt>2019-01-20T12:00:00Z</createdAt>
-        <mergedAt></mergedAt>
-        <closedAt></closedAt>
+        <opener>
+            <openerName>visnup</openerName>
+            <openerUrl>https://github.com/cool_man</openerUrl>
+        </opener>
+        <createdAt>2019-01-31T12:00:00Z</createdAt>
         <checkPass>false</checkPass>
         <labels>
             <label>tag: bug fix</label>
@@ -58,11 +64,13 @@
     <pullRequest id="6245">
         <title>Relax aria-role  linting for developer-created components</title>
         <url>https://github.com/facebook/create-react-app/pull/6219</url>
-        <openerName>babay</openerName>
+        <opener>
+            <openerName>babay</openerName>
+            <openerUrl>https://github.com/babay</openerUrl>
+        </opener>
         <createdAt>2019-01-20T12:00:00Z</createdAt>
         <mergedAt>2019-01-20T12:00:00Z</mergedAt>
-        <closedAt></closedAt>
-        <checkPass></checkPass>
+        <checkPass>true</checkPass>
         <labels>
         </labels>
         <comments>150</comments>

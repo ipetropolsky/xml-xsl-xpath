@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xsl:output method="html"/>
+                xmlns:date="http://exslt.org/dates-and-times"
+                xmlns:regexp="http://exslt.org/regular-expressions"
+                extension-element-prefixes="date regexp"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xsl:variable name="closedPR" select="count(//closedAt[ . != '']) + count(//mergedAt[ . != ''])">
-</xsl:variable>
+<xsl:import href="exslt.github.io/date/date.xsl"/>
+<xsl:import href="exslt.github.io/regexp/regexp.xsl"/>
 
+    <xsl:output method="html"/>
+<xsl:variable name="closedPR" select="count(//closedAt[ . != '']) + count(//mergedAt[ . != ''])"></xsl:variable>
 <xsl:template match="/">
 <html>
     <head>
@@ -51,19 +55,33 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
         </div>
         <div class="content">
             <xsl:value-of select="concat('#', @id)"/>
-            <xsl:value-of select="concat(' by ', openerName)"/>
+            <xsl:text> by </xsl:text>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="opener/openerUrl"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:value-of select="opener/openerName"/>
+            </a>
+
             <xsl:choose>
                 <xsl:when test="mergedAt != ''">
-                    <xsl:text> was merged at </xsl:text>
-                    <xsl:value-of select="mergedAt"/>
+                    <xsl:text> was merged </xsl:text>
+                    <xsl:call-template name="get_term">
+                        <xsl:with-param name="a_date" select="mergedAt"/>
+                    </xsl:call-template>
+
                 </xsl:when>
                 <xsl:when test="closedAt != ''">
-                    <xsl:text> was closed at </xsl:text>
-                    <xsl:value-of select="closedAt"/>
+                    <xsl:text> was closed </xsl:text>
+                    <xsl:call-template name="get_term">
+                        <xsl:with-param name="a_date" select="closedAt"/>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:text> was opened at </xsl:text>
-                    <xsl:value-of select="createdAt"/>
+                    <xsl:text> was opened </xsl:text>
+                    <xsl:call-template name="get_term">
+                        <xsl:with-param name="a_date" select="createdAt"/>
+                    </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
         </div>
@@ -103,5 +121,28 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
     </span>
     <xsl:text> </xsl:text>
 </xsl:template>
-
+<xsl:template name="get_term">
+    <xsl:param name="a_date"/>
+    <xsl:variable name="diff">
+        <xsl:call-template name="date:difference">
+            <xsl:with-param name="start" select="$a_date" />
+            <xsl:with-param name="end" select="date:date-time()" />
+        </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="days_dirty">
+        <xsl:value-of select="regexp:match($diff, 'P(\d*)DT')"/>
+    </xsl:variable>
+    <xsl:variable name="days_clear">
+        <xsl:value-of select="regexp:replace($days_dirty, '[A-Z]', 'g', '')"/>
+    </xsl:variable>
+    <xsl:choose>
+        <xsl:when test="$days_clear = ''">
+            <xsl:text>today</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$days_clear"/>
+            <xsl:text> day(s) ago</xsl:text>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
 </xsl:stylesheet>
