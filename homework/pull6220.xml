@@ -14,6 +14,18 @@
         <label>tag: breaking change</label>
     </labels>
     <comments>5</comments>
-    <body><![CDATA[This PR adds a Babel 7 plugin that aims to optimize certain React  patterns that aren't as optimized as they might be. For example, with this plugin the following output is optimized as shown:\r\n\r\n```js\r\n// Original\r\nvar _useState = Object(react__WEBPACK_IMPORTED_MODULE_1_[\"useState\"])(Math.random()),\r\n    _State2 = Object(_Users_gaearon_p_create_rreact_app_node_modules_babel_runtime_helpers_esm_sliceToArray_WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_useState, 1),\r\n    value = _useState2[0];\r\n    \r\n// With this plugin\r\nvar useState = react__WEBPACK_IMPORTED_MODULE_1_.useState;\r\nvar __ref__0 = useState(Math.random());\r\nvar value = __ref__0[0];\r\n```\r\n\r\n## Named imports to hooks get transformed\r\n\r\n```js\r\n// Original\r\nimport React, {useState} from 'react';\r\n\r\n// With this plugin\r\nimport React from 'react';\r\nconst {useState} = React;\r\n```\r\n\r\n## Array destructuring transform for React's built-in hooks\r\n\r\n```js\r\n// Original\r\nconst [counter, setCounter] = useState(0);\r\n\r\n// With this plugin\r\nconst __ref__0 = useState(0);\r\nconst counter = __ref__0[0];\r\nconst setCounter = __ref__0[1];\r\n```\r\n\r\n## React.createElement becomes a hoisted constant\r\n\r\n```js\r\n// Original\r\nimport React from 'react';\r\n\r\nfunction MyComponent() {\r\n  return React.createElement('div', null, 'Hello world');\r\n}\r\n\r\n// With this plugin\r\nimport React from 'react';\r\nconst __reactCreateElement__ = React.createElement;\r\n\r\nfunction MyComponent() {\r\n  return __reactCreateElement__('div', null, 'Hello world');\r\n}\r\n```\r\n\r\n",]]>
+    <body>
+        <![CDATA[
+        <div class="container">
+            <h1 class="title">
+                Pull request title
+            </h1>
+            <div class="block">
+                <div class="notification is-info">
+                    Body of the pull request
+                </div>
+            </div>
+        </div>
+       ]]>
     </body>
 </pullRequest>
