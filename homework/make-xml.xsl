@@ -16,7 +16,12 @@
 
     <xsl:template match="div/div">
         <pull>
-            <xsl:apply-templates select="div//span[@class='opened-by']"/>
+            <author>
+                <xsl:value-of select="div//span[@class='opened-by']/a"/>
+            </author>
+            <date>
+                <xsl:value-of select="div//span[@class='opened-by']/relative-time/@datetime"/>
+            </date>
             <type>
                 <xsl:apply-templates select="div//span[@class='tooltipped tooltipped-e']"/>
             </type>
@@ -30,15 +35,6 @@
                 <xsl:value-of select="div//div[@class='float-right col-2']"/>
             </comments>
         </pull>
-    </xsl:template>
-
-    <xsl:template match="span[@class='opened-by']">
-        <author>
-            <xsl:value-of select="./a"/>
-        </author>
-        <date>
-            <xsl:value-of select="./relative-time/@datetime"/>
-        </date>
     </xsl:template>
 
     <!--tag template-->
