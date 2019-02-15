@@ -253,14 +253,14 @@ html {
   padding: 1px 1px 1px 1px;
   display: inline-block;
 }
-.commit-build-status-true {
+.commit-build-status-passed {
   width: 12px;
   height: 13px;
   margin-left: 5px;
   background-image: url('./icons/check.svg');
   display: inline-block;
 }
-.commit-build-status-false {
+.commit-build-status-notpassed {
   width: 12px;
   height: 13px;
   margin-left: 5px;

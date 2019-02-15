@@ -15,7 +15,7 @@
         <body class="body-in-the-center">
 
             <header class="header">
-                <input type="text" placeholder="Search or jump to..."></input>
+                <input type="text" placeholder="Search or jump to..."/>
                 <a href="#">Pull requests</a>
                 <a href="#">Issues</a>
                 <a href="#">Marketplace</a>
@@ -136,103 +136,133 @@
                     </div>
                 </div>
             </div>
-            <script src="./pullRequests.js"></script>
+            <script src="./pullRequests.js"/>
         </body>
         </html>
     </xsl:template>
 
 
     <xsl:template match="pullRequests/summary/prInfo">
-        <div id="{./status}_button" class="pr-menu-state_condition">
-            <xsl:value-of select="./amount"/>
+        <div id="{status}_button" class="pr-menu-state_condition">
+            <xsl:value-of select="amount"/>
             <xsl:text> </xsl:text>
-            <xsl:value-of select="./status"/>
+            <xsl:value-of select="status"/>
         </div>    
     </xsl:template>
 
     <xsl:template match="pullRequests/item">
-
-        <div id="{./@id}" class="pr">
+        <div id="issue_{@id}" class="pr">
             <div class="pr-left-icon">
                 <xsl:apply-templates select="." mode="prStatus"/>
             </div>
             <div class="pr-info">
                 <div class="pr-info__first-line">
-                    <xsl:apply-templates select="./title" mode="title"/>
-                    <xsl:apply-templates select="./buildStatus" mode="buildStatus"/>
-                    <xsl:apply-templates select="./labels" mode="labels"/>
+                    <xsl:apply-templates select="title" mode="title"/>
+                    <xsl:apply-templates select="buildStatus" mode="buildStatus"/>
+                    <xsl:apply-templates select="labels" mode="labels"/>
                 </div>
                 <div class="pr-info__second-line">
                     <span class="opened-by">
-                        <xsl:apply-templates select="." mode="prInfo"/>
+                        <xsl:apply-templates select="." mode="prSummary"/>
                     </span>
                 </div>
             </div>
             <div class="comment">
-                <xsl:apply-templates select="./comments" mode="comments"/>
+                <xsl:apply-templates select="comments" mode="comments"/>
             </div>
         </div>
     </xsl:template>
 
     <xsl:template match="pullRequests/item"  mode="prStatus">
-        <span class="pr-left-icon__{@status}"></span>
+        <xsl:if test="@status='open'">
+            <span class="pr-left-icon__open"/>
+        </xsl:if>
+        <xsl:if test="@status='closed'">
+            <span class="pr-left-icon__closed"/>
+        </xsl:if>
+        <xsl:if test="@status='merged'">
+            <span class="pr-left-icon__merged"/>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template match="pullRequests/item/title"  mode="title">
-        <a class="pr-info__href" href="{./link}">
-            <xsl:value-of select="./name"/>
+        <a class="pr-info__href" href="{link}">
+            <xsl:value-of select="name"/>
         </a>
     </xsl:template>
 
     <xsl:template match="pullRequests/item/buildStatus" mode="buildStatus">
-        <span class="commit-build-status-{@passed}"></span>
+        <xsl:if test="@passed='true'">
+            <span class="commit-build-status-passed"/>
+        </xsl:if>
+        <xsl:if test="@passed='false'">
+            <span class="commit-build-status-notpassed"/>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template match="pullRequests/item/labels/label" mode="labels">
-        <a class="pr-info__label" style="background: {./backgroundColor}; color: {./textColor};" href="{./link}">
-            <xsl:value-of select="./name"/>
-        </a>
+        <xsl:if test="labelType='1'">
+            <a class="pr-info__label" style="background: yellow; color: black;" href="{link}">
+                <xsl:value-of select="name"/>
+            </a>
+        </xsl:if>
+        <xsl:if test="labelType='2'">
+            <a class="pr-info__label" style="background: pinkblack; color: black;" href="{link}">
+                <xsl:value-of select="name"/>
+            </a>
+        </xsl:if>
+        <xsl:if test="labelType='3'">
+            <a class="pr-info__label" style="background: orange; color: black;" href="{link}">
+                <xsl:value-of select="name"/>
+            </a>
+        </xsl:if>
+        <xsl:if test="labelType='4'">
+            <a class="pr-info__label" style="background: red; color: black;" href="{link}">
+                <xsl:value-of select="name"/>
+            </a>
+        </xsl:if>
     </xsl:template>
 
-    <xsl:template match="pullRequests/item[@status = 'open']" mode="prInfo">
+    <xsl:template match="pullRequests/item[@status = 'open']" mode="prSummary">
         <xsl:value-of select="concat('#', @id)"/>
         <xsl:text> opened </xsl:text>
-        <xsl:apply-templates select="./openDateTime" mode="time"/>
+        <xsl:apply-templates select="openDateTime" mode="time"/>
         <xsl:text> by </xsl:text>
-        <xsl:apply-templates select="./author" mode="author"/>
+        <xsl:apply-templates select="author" mode="author"/>
     </xsl:template>
 
-    <xsl:template match="pullRequests/item[@status = 'closed' or @status = 'merged']" mode="prInfo">
+    <xsl:template match="pullRequests/item[@status = 'closed']" mode="prSummary">
         <xsl:value-of select="concat('#', @id)"/>
         <xsl:text> by </xsl:text>
-        <xsl:apply-templates select="./author" mode="author"/>
-        <xsl:text> was </xsl:text>
-        <xsl:value-of select="concat(@status, ' ')"/>
-        <xsl:apply-templates select="./closeDateTime" mode="time"/>
+        <xsl:apply-templates select="author" mode="author"/>
+        <xsl:text> was closed </xsl:text>
+        <xsl:apply-templates select="closeDateTime" mode="time"/>
     </xsl:template>
 
-    <xsl:template match="pullRequests/item/openDateTime" mode="time">
-        <relative-time datetime="{./year}-{./month}-{./day}T{./hour}:{./minute}:{./second}Z" title="{./day}.{./month}.{./year}, {./hour}:{./minute} GMT{./GMT}">
-            <xsl:value-of select="./outputText"/>
-        </relative-time>
+    <xsl:template match="pullRequests/item[@status = 'merged']" mode="prSummary">
+        <xsl:value-of select="concat('#', @id)"/>
+        <xsl:text> by </xsl:text>
+        <xsl:apply-templates select="author" mode="author"/>
+        <xsl:text> was merged </xsl:text>
+        <xsl:apply-templates select="closeDateTime" mode="time"/>
     </xsl:template>
 
-    <xsl:template match="pullRequests/item/closeDateTime" mode="time">
-        <relative-time datetime="{./year}-{./month}-{./day}T{./hour}:{./minute}:{./second}Z" title="{./day}.{./month}.{./year}, {./hour}:{./minute} GMT{./GMT}">
-            <xsl:value-of select="./outputText"/>
+    <xsl:template match="pullRequests/item/openDateTime | pullRequests/item/closeDateTime" mode="time">
+        <relative-time datetime="{dateTime}" title="{elementTitle}">
+            <xsl:value-of select="outputText"/>
         </relative-time>
     </xsl:template>
 
     <xsl:template match="pullRequests/item/author" mode="author">
-        <a class="user-link" href="{./link}">
-            <xsl:value-of select="./name"/>
+        <a class="user-link" href="{link}">
+            <xsl:value-of select="name"/>
         </a>
     </xsl:template>
 
     <xsl:template match="pullRequests/item/comments" mode="comments">
-        <a href="{./link}">
-            <span class="comment-svg-icon"></span>
-            <xsl:value-of select="./amount"/>
+        <a href="{link}">
+            <span class="comment-svg-icon"/>
+            <xsl:value-of select="amount"/>
         </a>
     </xsl:template>
 
