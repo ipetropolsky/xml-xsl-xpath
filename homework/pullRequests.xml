@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pullRequests>
+    <summary>
+        <prInfo>
+            <status>Open</status>
+            <amount>1</amount>
+        </prInfo>
+        <prInfo>
+            <status>Closed</status>
+            <amount>2</amount>
+        </prInfo>
+    </summary>
+    <item id="1" status="merged">
+        <title>
+            <name>merged pull request</name>
+            <link>#</link>
+        </title>
+        <buildStatus passed="true">
+            <link>#</link>
+        </buildStatus>
+        <labels>
+            <label>
+                <name>LabelOne</name>
+                <link>#</link>
+                <labelType>1</labelType>
+            </label>
+            <label>
+                <name>LabelTwo</name>
+                <link>#</link>
+                <labelType>2</labelType>
+            </label>
+        </labels>
+        <openDateTime>
+            <outputText>1 day ago</outputText>
+            <dateTime>2019-01-22T11:10:01Z</dateTime>
+            <elementTitle>22.01.2019, 11:10 GMT+3</elementTitle>
+        </openDateTime>
+        <closeDateTime>
+            <outputText>3 days ago</outputText>
+            <dateTime>2019-01-25T09:15:01Z</dateTime>
+            <elementTitle>25.01.2019, 09:15 GMT+3</elementTitle>
+        </closeDateTime>
+        <author>
+            <name>user1</name>
+            <link>#</link>
+        </author>
+        <comments>
+            <amount>55</amount>
+            <link>#</link>
+        </comments>
+    </item>
+
+    <item id="2" status="open">
+        <title>
+            <name>open pull request</name>
+            <link>#</link>
+        </title>
+        <buildStatus passed="false">
+            <link>#</link>
+        </buildStatus>
+        <labels>
+            <label>
+                <name>LabelThree</name>
+                <link>#</link>
+                <labelType>1</labelType>
+            </label>
+            <label>
+                <name>LabelFour</name>
+                <link>#</link>
+                <labelType>3</labelType>
+            </label>
+        </labels>
+        <openDateTime>
+            <outputText>2 days ago</outputText>
+            <dateTime>2019-01-26T03:03:03Z</dateTime>
+            <elementTitle>26.01.2019, 03:03 GMT+4</elementTitle>
+        </openDateTime>
+        <closeDateTime>
+            <outputText></outputText>
+            <dateTime></dateTime>
+            <elementTitle></elementTitle>
+        </closeDateTime>
+        <author>
+            <name>user2</name>
+            <link>#</link>
+        </author>
+        <comments>
+            <amount>4</amount>
+            <link>#</link>
+        </comments>
+    </item>
+
+    <item id="3" status="closed">
+        <title>
+            <name>closed pull request</name>
+            <link>#</link>
+        </title>
+        <buildStatus passed="true">
+            <link>#</link>
+        </buildStatus>
+        <labels>
+            <label>
+                <name>LabelFive</name>
+                <link>#</link>
+                <labelType>4</labelType>
+            </label>
+        </labels>
+        <openDateTime>
+            <outputText>1 day ago</outputText>
+            <dateTime>2019-01-22T11:10:01Z</dateTime>
+            <elementTitle>22.01.2019, 11:10 GMT+3</elementTitle>
+        </openDateTime>
+        <closeDateTime>
+            <outputText>1 day ago</outputText>
+            <dateTime>2019-01-27T09:15:01Z</dateTime>
+            <elementTitle>27.01.2019, 09:15 GMT+3</elementTitle>
+        </closeDateTime>
+        <author>
+            <name>user3</name>
+            <link>#</link>
+        </author>
+        <comments>
+            <amount>9</amount>
+            <link>#</link>
+        </comments>
+    </item>
+    
+</pullRequests>

@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  text-decoration: none;
+}
+html {
+  height: 100%;
+}
+.body-in-the-center {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .body-in-the-center {
+    align-items: flex-start;
+  }
+}
+.header {
+  background-color: #24292e;
+  width: 100%;
+  height: 70px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .header {
+    width: 900px;
+  }
+}
+.header input {
+  width: 250px;
+  padding: 7px 0px 5px 7px;
+  border: none;
+  border-radius: 3px;
+  background-color: #404448;
+  display: flex;
+  align-items: center;
+}
+.header input:focus {
+  outline: none;
+}
+.header a {
+  color: #fff;
+  padding-left: 15px;
+}
+.header a:hover {
+  color: #d5d9dc;
+}
+.main-tabs {
+  width: 100%;
+  height: 90px;
+  padding-top: 10px;
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .main-tabs {
+    width: 900px;
+    border: none;
+  }
+}
+.main-tabs-top-part {
+  display: flex;
+  justify-content: center;
+}
+.main-tabs-top-part__link {
+  margin-right: 500px;
+  padding-top: 5px;
+  font-size: 20px;
+  display: flex;
+}
+.main-tabs-top-part__link a:hover {
+  border-bottom: 1px solid blue;
+}
+.main-tabs-top-part__buttons button {
+  border: 1px solid #d5d9dc;
+  border-radius: 2px;
+  padding: 3px 10px 3px 10px;
+  background-color: #f1f4f7;
+}
+.main-tabs-top-part__buttons button:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+.main-tabs-bottom-part {
+  margin-left: -500px;
+  display: flex;
+  justify-content: center;
+}
+.main-tabs-bottom-part__tab button {
+  margin-left: 10px;
+  border: none;
+  background: none;
+}
+.main-tabs-bottom-part__tab button:hover {
+  background-color:#f6f8fa;
+  cursor: pointer;
+}
+.main-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-block {
+  margin: 20px 5px 20px 5px;
+  padding-top: 10px;
+  border: 1px solid gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-block__text {
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-block__text p {
+  margin-top: 40px;
+}
+.text-block__link {
+  width: 60px;
+  margin-left: 400px;
+  padding-bottom: 60px;
+  position: absolute;
+}
+.pr-list {
+  min-height: 200px;
+  margin: 0px 5px 0px 5px;
+}
+.pr-menu {
+  display: flex;
+  border: 1px solid gainsboro;
+  background-color: #f6f8fa;
+  justify-content: space-between;
+}
+.pr-menu-state {
+  display: flex;
+}
+.pr-menu-state_condition {
+  padding: 3px;
+}
+.pr-menu-state_condition:first-child {
+  font-weight: bold;
+}
+.pr-menu-state_condition:hover {
+  cursor: pointer;
+}
+.pr-menu-dropdown {
+  display: flex;
+}
+.pr-menu-dropdown__element {
+  padding: 3px;
+}
+.pr-menu-dropdown__element:hover {
+  cursor: pointer;
+}
+.pr-menu-dropdown__element-content {
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.pr-menu-dropdown__element:hover .pr-menu-dropdown__element-content {
+  cursor: pointer;
+  display: flex;
+}
+.pr-wrapper {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.open-pr {
+  flex-direction: column;
+}
+.close-pr {
+  display: none;
+  flex-direction: column;
+}
+.pr {
+  width: 100%;
+  min-height: 50px;
+  padding: 5px;
+  border: 1px solid gainsboro;
+  display: flex;
+}
+.pr:hover {
+  background-color: #f6f8fa;
+}
+.pr-left-icon {
+  height: 100%;
+  padding-left: 10px;
+}
+.pr-left-icon__merged {
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  background-position: -0px 1px;
+  background-image: url('./icons/git-merge.svg');
+}
+.pr-left-icon__closed {
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  background-position: -0px 1px;
+  background-image: url('./icons/git-pull-request.svg');
+}
+.pr-left-icon__open {
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  background-position: -0px 1px;
+  background-image: url('./icons/git-pull-request.svg');
+}
+.pr-info {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.pr-info__href {
+  margin-left: 10px;
+  color: black;
+}
+.pr-info__href:hover {
+  color: blue;
+}
+.pr-info__first-line {
+  display: flex;
+  display: inline;
+  line-height: 16px;
+}
+.pr-info__second-line {
+  margin-top: 3px;
+  display: flex;
+}
+.pr-info__label {
+  background-color: pink;
+  border-radius: 3px;
+  margin-left: 3px;
+  padding: 1px 1px 1px 1px;
+  display: inline-block;
+}
+.commit-build-status-passed {
+  width: 12px;
+  height: 13px;
+  margin-left: 5px;
+  background-image: url('./icons/check.svg');
+  display: inline-block;
+}
+.commit-build-status-notpassed {
+  width: 12px;
+  height: 13px;
+  margin-left: 5px;
+  background-image: url('./icons/x.svg');
+  display: inline-block;
+}
+.opened-by {
+  margin-left: 10px;
+  font-size: 14px;
+  color: darkcyan;
+}
+.user-link {
+  color: darkcyan;
+}
+.user-link:hover {
+  color: deepskyblue;
+}
+.comment {
+  width: 25%;
+  line-height: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+.comment > a:hover {
+  color: blue;
+}
+.comment > a {
+  color: teal;
+}
+.comment-svg-icon {
+  width: 15px;
+  height: 13px;
+  margin-right: 4px;
+  background-image: url('./icons/comment.svg');
+  display: inline-block;
+}
+.bottom-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .bottom-align {
+    width: 900px;
+  }
+}
+.pagination {
+  padding-bottom: 60px;
+  display: flex;
+}
+.pagination a {
+  padding: 8px 14px;
+  border: 1px solid gainsboro;
+}
+.pagination__active {
+  background-color: #0366d6;
+}
+.bottom-menu {
+  width: 900px;
+  padding-bottom: 60px; 
+  padding: 40px 5px 60px 5px;
+  border-top: 1px solid gainsboro;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.bottom-menu__left {
+  display: flex;
+}
+.bottom-menu__left a {
+  padding-left: 15px;
+}
+.bottom-menu__right {
+  display: flex;
+}
+.bottom-menu__right a {
+  padding-left: 15px;
+}
