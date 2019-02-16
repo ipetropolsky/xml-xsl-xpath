@@ -83,21 +83,15 @@
     </xsl:template>
 
     <xsl:template match="type[text()='open']">
-        <span data-toggle="tooltip" data-placement="bottom" title="Open">
-            <img src="resources/img/open-pr.svg"></img>
-        </span>
+        <img src="resources/img/open-pr.svg" title="Open"></img>
     </xsl:template>
 
     <xsl:template match="type[text()='closed']">
-        <span data-toggle="tooltip" data-placement="bottom" title="Closed">
-            <img src="resources/img/closed-pr.svg"></img>
-        </span>
+        <img src="resources/img/closed-pr.svg" title="Closed"></img>
     </xsl:template>
 
     <xsl:template match="type[text()='merged']">
-        <span data-toggle="tooltip" data-placement="bottom" title="Merged">
-            <img src="resources/img/merged-pr.svg"></img>
-        </span>
+        <img src="resources/img/merged-pr.svg" title="Merged"></img>
     </xsl:template>
 
 
