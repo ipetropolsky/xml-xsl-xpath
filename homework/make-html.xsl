@@ -8,7 +8,7 @@
                 encoding="utf-8"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:template name="root" match="pulls">
+    <xsl:template name="root" match="/pulls">
         <html>
             <head>
                 <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

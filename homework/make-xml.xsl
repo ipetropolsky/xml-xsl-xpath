@@ -8,7 +8,7 @@
                 encoding="utf-8"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:template match="body">
+    <xsl:template match="/html/body">
         <pulls>
             <xsl:apply-templates select="div"/>
         </pulls>
