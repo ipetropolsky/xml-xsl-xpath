@@ -68,7 +68,7 @@
                 <xsl:apply-templates select="status"/>
             </td>
             <td>
-                <xsl:value-of select="date"/>
+                <xsl:value-of select="date/formatted"/>
             </td>
             <td>
                 <xsl:value-of select="author"/>

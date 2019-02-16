@@ -20,7 +20,14 @@
                 <xsl:value-of select="div//span[@class='opened-by']/a"/>
             </author>
             <date>
-                <xsl:value-of select="div//span[@class='opened-by']/relative-time/@datetime"/>
+                <raw>
+                    <xsl:value-of select="div//span[@class='opened-by']/relative-time/@datetime"/>
+                </raw>
+                <formatted>
+                    <xsl:variable name="dtime" select="div//span[@class='opened-by']/relative-time/@datetime">
+                    </xsl:variable>
+                    <xsl:value-of select="concat(substring(substring-after($dtime,'T'),0,6),' ', div//span[@class='opened-by']/relative-time)"/>
+                </formatted>
             </date>
             <type>
                 <xsl:apply-templates select="div//span[@class='tooltipped tooltipped-e']"/>
