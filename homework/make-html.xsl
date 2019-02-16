@@ -82,19 +82,19 @@
         </tr>
     </xsl:template>
 
-    <xsl:template match="type[text()='Open pull request']">
+    <xsl:template match="type[text()='open']">
         <span data-toggle="tooltip" data-placement="bottom" title="Open">
             <img src="resources/img/open-pr.svg"></img>
         </span>
     </xsl:template>
 
-    <xsl:template match="type[text()='Closed pull request']">
+    <xsl:template match="type[text()='closed']">
         <span data-toggle="tooltip" data-placement="bottom" title="Closed">
             <img src="resources/img/closed-pr.svg"></img>
         </span>
     </xsl:template>
 
-    <xsl:template match="type[text()='Merged pull request']">
+    <xsl:template match="type[text()='merged']">
         <span data-toggle="tooltip" data-placement="bottom" title="Merged">
             <img src="resources/img/merged-pr.svg"></img>
         </span>

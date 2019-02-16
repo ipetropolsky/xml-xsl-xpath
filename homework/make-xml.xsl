@@ -51,9 +51,12 @@
         </passed>
     </xsl:template>
 
-    <xsl:template match="span[@class='tooltipped tooltipped-e']">
-        <xsl:value-of select="@aria-label"/>
-    </xsl:template>
+    <xsl:template match="span[@class='tooltipped tooltipped-e' and contains(@aria-label, 'Open')]">open</xsl:template>
+
+    <xsl:template match="span[@class='tooltipped tooltipped-e' and contains(@aria-label, 'Closed')]">closed</xsl:template>
+
+    <xsl:template match="span[@class='tooltipped tooltipped-e' and contains(@aria-label, 'Merged')]">merged</xsl:template>
+
 
     <!--checks passed template-->
     <xsl:template match="svg[@class='octicon octicon-check']">true</xsl:template>
