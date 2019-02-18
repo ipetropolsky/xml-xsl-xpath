@@ -124,3 +124,15 @@ body {
 	font-size: 12px;
 }
 
+.pr_content_info_ref {
+     text-decoration: none;
+     color: #000;
+}
+
+.pr_content_info_ref:hover {
+     color: #00f;
+}
+
+
+     
+

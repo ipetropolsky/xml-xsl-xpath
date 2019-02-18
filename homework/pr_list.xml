@@ -2,7 +2,7 @@
 <prList>
     <pullRequest>
         <status>opened</status>
-        <name>http to https in bit.ly links</name>
+        <title>http to https in bit.ly links</title>
         <checked>no</checked>
         <CLA/>
         <id>6255</id>
@@ -11,7 +11,7 @@
     </pullRequest>
     <pullRequest>
         <status>opened</status>
-        <name>removed redundant statements</name>
+        <title>removed redundant statements</title>
         <checked>no</checked>
         <CLA/>
         <tag>documentation</tag>
@@ -21,7 +21,7 @@
     </pullRequest>
     <pullRequest>
         <status>closed</status>
-        <name>Adding Jest and Enzyme as development dependencies.</name>
+        <title>Adding Jest and Enzyme as development dependencies.</title>
         <checked>no</checked>
         <CLA/>
         <comments>4</comments>
@@ -31,7 +31,7 @@
     </pullRequest>
     <pullRequest>
         <status>merged</status>
-        <name>Update `serve` port flag and add example</name>
+        <title>Update `serve` port flag and add example</title>
         <checked>yes</checked>
         <CLA/>
         <tag>internal</tag>
@@ -42,7 +42,7 @@
     </pullRequest>
     <pullRequest>
         <status>opened</status>
-        <name>Add deployment instructions with AWS Amplify</name>
+        <title>Add deployment instructions with AWS Amplify</title>
         <checked>yes</checked>
         <comments>1</comments>
         <id>6208</id>
